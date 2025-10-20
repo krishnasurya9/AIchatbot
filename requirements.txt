@@ -1,18 +1,6 @@
-FastAPI framework and server
-
 fastapi
 uvicorn[standard]
-
-Configuration management
-
+pydantic
 pydantic-settings
-
-AI / LLM SDKs
-
-together
-langchain-google-genai
-langchain-community
-
-Database driver
-
+python-dotenv
 motor
