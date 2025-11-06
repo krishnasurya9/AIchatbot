@@ -5,7 +5,7 @@ from uuid import uuid4, UUID
 from datetime import datetime
 
 # Import the database collections we will interact with
-from app.database.client import db_client
+from backend.app.database.client import db_client
 
 router = APIRouter()
 

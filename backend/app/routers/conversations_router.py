@@ -1,8 +1,8 @@
 # app/routers/conversations_router.py
 from fastapi import APIRouter, Depends, HTTPException, Query
-from app.models.schemas import ConversationCreate, ConversationOut, MessageCreate, MessageOut
-from app.database.client import get_db
-from app.database.sessions import create_conversation, get_conversation_by_id, add_message, get_messages_for_conversation
+from backend.app.models.schemas import ConversationCreate, ConversationOut, MessageCreate, MessageOut
+from backend.app.database.client import get_db
+from backend.app.database.sessions import create_conversation, get_conversation_by_id, add_message, get_messages_for_conversation
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
 router = APIRouter(prefix="/conversations",tags=["conversations"])

@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
-from app.services import debugger
-from app.memory import get_active_sessions, clear_session_history, get_session_history
+from backend.app.services import debugger
+from backend.app.memory import get_active_sessions, clear_session_history, get_session_history
 
 router = APIRouter()
 

@@ -1,8 +1,8 @@
 # app/routers/users_router.py
 from fastapi import APIRouter, Depends, HTTPException, status, Query
-from app.models.schemas import UserCreate, UserOut, ConversationOut
-from app.database.client import get_db
-from app.database.sessions import create_or_get_user, get_conversations_for_user
+from backend.app.models.schemas import UserCreate, UserOut, ConversationOut
+from backend.app.database.client import get_db
+from backend.app.database.sessions import create_or_get_user, get_conversations_for_user
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
 router = APIRouter(prefix="/users", tags=["Users"])

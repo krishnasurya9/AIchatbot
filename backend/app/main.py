@@ -2,12 +2,12 @@ from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.config import settings
-from app.logger import logger
-from app.database.client import connect_to_mongo, close_mongo_connection
+from backend.app.config import settings
+from backend.app.logger import logger
+from backend.app.database.client import connect_to_mongo, close_mongo_connection
 
 # Import all routers
-from app.routers import (
+from backend.app.routers import (
     tutor_router,
     debugger_router,
     rag_router,

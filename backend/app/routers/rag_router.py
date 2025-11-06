@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from app.services import rag
+from backend.app.services import rag
 
 router = APIRouter()
 

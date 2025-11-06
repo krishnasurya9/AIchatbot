@@ -10,8 +10,9 @@ class Settings(BaseSettings):
     log_file: str = "backend_app.log"
 
     # API Keys for different LLM providers
-    together_api_key: str | None = None
+    # together_api_key: str | None = None
     google_api_key: str | None = None
+    DEFAULT_MODEL: str = "gemini-2.5-flash-lite-preview-09-2025"
 
     # Database settings
     mongo_uri: str = "mongodb://localhost:27017/"
