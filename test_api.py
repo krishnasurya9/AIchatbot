@@ -1,5 +1,5 @@
 import google.generativeai as genai
-from backend.app.config import settings
+from app..config import settings
 
 genai.configure(api_key=settings.google_api_key)
 

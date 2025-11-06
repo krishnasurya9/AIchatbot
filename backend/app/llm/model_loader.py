@@ -1,5 +1,5 @@
-from backend.app.config import settings
-from backend.app.logger import logger
+from app.config import settings
+from app.logger import logger
 
 # Placeholder for different LLM clients
 _together_client = None

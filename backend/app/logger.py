@@ -1,6 +1,6 @@
 import logging
 import sys
-from backend.app.config import settings
+from app.config import settings
 
 # Configure a shared logger for the application
 logging.basicConfig(

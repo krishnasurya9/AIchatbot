@@ -432,3 +432,9 @@ pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [WinError 10061] No
 2025-11-05 11:15:41,339 - app.logger - INFO - [client:67] - MongoDB connection closed.
 2025-11-05 11:15:48,938 - app.logger - INFO - [client:50] - Connecting to MongoDB at mongodb+srv://chauhanrohan223_db_user:BnyXyZbWuSWclMzy@cluster0.lpirzsb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0...
 2025-11-05 11:15:48,944 - app.logger - INFO - [client:55] - MongoDB client initialized.
+2025-11-06 22:01:18,306 - app.logger - INFO - [client:50] - Connecting to MongoDB at mongodb+srv://chauhanrohan223_db_user:BnyXyZbWuSWclMzy@cluster0.lpirzsb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0...
+2025-11-06 22:01:18,314 - app.logger - INFO - [client:55] - MongoDB client initialized.
+2025-11-06 22:01:18,339 - app.logger - INFO - [client:67] - MongoDB connection closed.
+2025-11-06 22:01:25,973 - app.logger - INFO - [client:50] - Connecting to MongoDB at mongodb+srv://chauhanrohan223_db_user:BnyXyZbWuSWclMzy@cluster0.lpirzsb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0...
+2025-11-06 22:01:25,977 - app.logger - INFO - [client:55] - MongoDB client initialized.
+2025-11-06 22:20:50,197 - app.logger - INFO - [client:67] - MongoDB connection closed.

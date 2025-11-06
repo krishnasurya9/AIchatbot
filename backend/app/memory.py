@@ -1,4 +1,4 @@
-from backend.app.logger import logger
+from app.logger import logger
 from langchain_community.chat_message_histories import ChatMessageHistory
 
 # In-memory stores that can be replaced by a database layer

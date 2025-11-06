@@ -1,4 +1,4 @@
-from backend.app.logger import logger
+from app.logger import logger
 
 async def query_rag(query: str) -> list:
     logger.info(f"RAG service queried with: '{query}'")
