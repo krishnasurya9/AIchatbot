@@ -1,0 +1,29 @@
+# Gemini Integration – Day 3 Update
+
+## Overview
+This document details the LLM service architecture integrated using Google Gemini (Pro & Flash).
+
+## Components
+### 1. Model Loader (`app/model_loader.py`)
+Handles model loading with fallback to Flash variant if Pro fails.
+
+### 2. LLM Service (`app/services/llm_service.py`)
+Provides functions for:
+- `query_llm()` → synchronous/timeout safe call  
+- `stream_llm()` → async streaming for frontend
+
+### 3. Endpoints
+- `/debugger/chat` → Debugging assistant
+- `/tutor/chat` → Educational tutor
+
+## Error Handling
+- Timeout → 30s max wait
+- Fallback → Flash model used if Pro fails
+- Rate limiting → Planned for next phase
+
+## Example Request
+```bash
+POST /tutor/chat
+{
+  "query": "Explain CNN filters."
+}
