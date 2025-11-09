@@ -1,5 +1,5 @@
 
-=======
+
 # FastAPI framework and server
 fastapi
 uvicorn[standard]
@@ -16,4 +16,4 @@ google-generativeai>=0.6.0
 
 # Database driver
 motor
->>>>>>> 23d73b0b4107c83c972e0b293e0077cc5022803e
+
