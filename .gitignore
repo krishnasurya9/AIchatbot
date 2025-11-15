@@ -1,4 +1,14 @@
-# Environment and sensitive configs
-.env
+# Ignore environment files
+backend/.env
+backend/.env.local
+backend/.env.*
 
+# Python ignores
+__pycache__/
+*.pyc
 
+# Logs
+*.log
+
+# VS Code
+.vscode/
