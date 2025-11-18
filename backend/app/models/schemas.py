@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-from typing import List, Optional
+from typing import List, Optional, Any
 from datetime import datetime
 
 # --- Base Application Schemas ---
@@ -37,7 +37,7 @@ class MessageOut(BaseModel):
     content: str
     timestamp: datetime
 
-# --- RAG Schemas ---
+# --- RAG Schemas (NEW: You were missing these) ---
 
 class RAGQuery(BaseModel):
     question: str
