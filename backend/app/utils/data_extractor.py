@@ -4,10 +4,6 @@ from typing import List, Dict, Union
 from app.logger import logger
 
 async def process_data(content: bytes, file_name: str, file_type: str) -> List[Dict[str, Union[str, dict]]]:
-    """
-    Extracts schema, summary statistics, and sample rows from
-    CSV or Excel files.
-    """
     chunks = []
     try:
         if file_type == ".csv":
@@ -17,38 +13,15 @@ async def process_data(content: bytes, file_name: str, file_type: str) -> List[D
         else:
             return []
 
-        # Chunk 1: Schema and Summary Statistics
-        schema_buffer = StringIO()
-        df.info(verbose=True, buf=schema_buffer)
-        schema = schema_buffer.getvalue()
-        
-        summary = "No numeric data for summary."
-        if not df.select_dtypes(include='number').empty:
-            summary = df.describe().to_string()
+        buffer = StringIO()
+        df.info(buf=buffer)
+        schema = buffer.getvalue()
         
         chunks.append({
-            "content": f"File Schema:\n{schema}\n\nSummary Statistics:\n{summary}",
-            "metadata": {
-                "file_name": file_name,
-                "file_type": file_type,
-                "chunk_type": "summary"
-            }
+            "content": f"Schema:\n{schema}\n\nSample:\n{df.head().to_string()}",
+            "metadata": {"file_name": file_name, "file_type": file_type, "chunk_type": "summary"}
         })
-
-        # Chunk 2: Sample Rows
-        sample_rows = df.head(5).to_string()
-        chunks.append({
-            "content": f"Sample Data (First 5 Rows):\n{sample_rows}",
-            "metadata": {
-                "file_name": file_name,
-                "file_type": file_type,
-                "chunk_type": "sample_rows"
-            }
-        })
-
-        logger.info(f"Extracted {len(chunks)} data chunks from {file_name}")
         return chunks
-
     except Exception as e:
         logger.error(f"Error processing data file {file_name}: {e}", exc_info=True)
         return []
