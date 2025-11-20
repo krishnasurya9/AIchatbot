@@ -83,3 +83,11 @@ async def connect_to_mongo():
 
 async def close_mongo_connection():
     await db_client.close_connection()
+
+
+async def get_db():
+    """
+    Dependency that returns the MongoDB database instance.
+    Used in FastAPI routes.
+    """
+    return db_client.get_database()
