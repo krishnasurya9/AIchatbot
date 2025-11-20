@@ -1,5 +1,5 @@
 from app.logger import logger
-from app.model_loader import get_gemini_model
+from app.llm.model_loader import get_gemini_model
 from app.memory import get_session_history
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables.history import RunnableWithMessageHistory
