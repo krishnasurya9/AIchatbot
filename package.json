@@ -1,0 +1,42 @@
+{
+  "name": "ai-tutor-extension",
+  "displayName": "AI Tutor",
+  "description": "Ask code questions to the AI assistant and see replies in a side panel.",
+  "version": "0.1.0",
+  "publisher": "your-publisher-name",
+  "engines": { "vscode": "^1.70.0" },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onCommand:ai-tutor.askQuestion"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ai-tutor.askQuestion",
+        "title": "AI Tutor: Ask Question"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "ai-tutor.askQuestion",
+        "key": "ctrl+alt+q",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run build",
+    "build": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6",
+    "@types/node": "^20.4.2",
+    "@types/vscode": "^1.78.0",
+    "vscode": "^1.1.60"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
+  }
+}
