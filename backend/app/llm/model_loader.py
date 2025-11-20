@@ -4,6 +4,7 @@ from app.logger import logger
 # Placeholder for different LLM clients
 _together_client = None
 _gemini_client = None
+_embedding_model = None  # ✅ Added this
 
 def get_together_ai_client():
     """Initializes and returns the Together AI client for the Tutor service."""
@@ -29,7 +30,11 @@ def get_gemini_model():
         if settings.google_api_key:
             try:
                 from langchain_google_genai import ChatGoogleGenerativeAI
-                _gemini_client = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.2)
+                _gemini_client = ChatGoogleGenerativeAI(
+                    model="gemini-2.0-flash", 
+                    google_api_key=settings.google_api_key,
+                    temperature=0.2
+                )
                 logger.info("Google Gemini model initialized successfully.")
             except ImportError:
                  logger.error("LangChain Google GenAI is not installed.")
@@ -39,3 +44,23 @@ def get_gemini_model():
             logger.warning("GOOGLE_API_KEY not set. Debugger service will be mocked.")
     return _gemini_client
 
+# ✅ Added this function for RAG
+def get_embedding_model():
+    """Initializes and returns the Google Gemini Embedding model for RAG."""
+    global _embedding_model
+    if _embedding_model is None:
+        if settings.google_api_key:
+            try:
+                from langchain_google_genai import GoogleGenerativeAIEmbeddings
+                _embedding_model = GoogleGenerativeAIEmbeddings(
+                    model="models/text-embedding-004",
+                    google_api_key=settings.google_api_key
+                )
+                logger.info("Google Gemini Embedding model initialized successfully.")
+            except ImportError:
+                logger.error("LangChain Google GenAI is not installed.")
+            except Exception as e:
+                logger.error(f"Failed to initialize Embedding model: {e}")
+        else:
+            logger.warning("GOOGLE_API_KEY not set. RAG ingestion will fail.")
+    return _embedding_model
