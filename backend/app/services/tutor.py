@@ -1,7 +1,7 @@
 import json
 from app.logger import logger
 from app.memory import pop_error_context
-from app.model_loader import get_together_ai_client
+from app.llm.model_loader import get_together_ai_client
 from app.services import rag
 
 DEBUG_PROMPT = """You are an AI coding tutor helping a user with a specific error.
