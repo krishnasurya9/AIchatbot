@@ -137,7 +137,7 @@ async def retrieve_context_multi_source(
         results = await db.all_chunks.aggregate(pipeline).to_list(length=20)
     except Exception as e:
         logger.error(f"Vector search failed: {e}. Do you have a 'vector_index' setup in Atlas?", exc_info=True)
-        return []
+        return [],[]
 
     # 5. TODO: Re-rank with FlashRank (as specified in your doc)
     # For now, we just take the top 5

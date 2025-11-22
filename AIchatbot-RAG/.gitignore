@@ -12,3 +12,5 @@ __pycache__/
 
 # VS Code
 .vscode/
+
+node_modules/

@@ -1,7 +1,7 @@
 import json
 from backend.app.logger import logger
 from backend.app.memory import pop_error_context
-from backend.app.llm.model_loader import get_together_ai_client
+from backend.app.llm.model_loader import get_gemini_model
 from backend.app.services import rag
 
 DEBUG_PROMPT = """You are an AI coding tutor helping a user with a specific error.
@@ -47,7 +47,7 @@ async def get_tutor_response(session_id: str, question: str, use_rag: bool = Tru
     return await _call_llm(prompt)
 
 async def _call_llm(prompt: str) -> dict:
-    client = get_together_ai_client()
+    client = get_gemini_model()
     if not client:
         return {"explanation": "Mock response: AI Tutor not configured.", "stepsToFix": [], "resources": []}
     
@@ -59,5 +59,5 @@ async def _call_llm(prompt: str) -> dict:
         )
         return json.loads(response.choices[0].message.content)
     except Exception as e:
-        logger.error(f"Error calling Together AI: {e}", exc_info=True)
+        logger.error(f"Error calling Gemini AI: {e}", exc_info=True)
         raise Exception("Failed to communicate with the Tutor AI model.") from e

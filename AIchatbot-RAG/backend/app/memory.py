@@ -1,5 +1,6 @@
 from backend.app.logger import logger
 from langchain_community.chat_message_histories import ChatMessageHistory
+from uuid import uuid4
 
 # In-memory stores that can be replaced by a database layer
 _error_context_store = {}
@@ -36,4 +37,15 @@ def clear_session_history(session_id: str):
     if session_id in _session_store:
         _session_store[session_id].clear()
         logger.info(f"Cleared chat history for session '{session_id}'.")
+
+# --- Session ID Management ---
+async def get_or_create_session_id(context) -> str:
+    session_id = context.globalState.get('sessionId')
+    if not session_id:
+        session_id = str(uuid4())
+        await context.globalState.update('sessionId', session_id)
+        logger.info(f"Created new session ID: {session_id}")
+    else:
+        logger.info(f"Retrieved existing session ID: {session_id}")
+    return session_id
 

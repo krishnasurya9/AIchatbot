@@ -1,77 +1,78 @@
-from fastapi import FastAPI, Request
-from fastapi.responses import JSONResponse
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from backend.app.routers import tutor_router, debugger_router, rag_router, users_router, conversations_router, sessions_router
+from backend.app.database.client import db_client, connect_to_mongo, close_mongo_connection
+import logging
 
-from backend.app.config import settings
-from backend.app.logger import logger
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
-from backend.app.routers import (
-    tutor_router,
-    debugger_router,
-    rag_router,
-    admin_router,
-    sessions_router,
-    users_router,
-    conversations_router,
-)
-from backend.app.database.client import connect_to_mongo, close_mongo_connection
-from backend.app.llm import llm_router  # ✅ Unified LLM router (Gemini + Together AI)
-
-# ------------------------------------------------------------
-# ✅ FastAPI Initialization
-# ------------------------------------------------------------
 app = FastAPI(
-    title=settings.app_name,
-    description="A unified backend for AI-powered tutoring, debugging, and multi-LLM chat.",
-    version="2.0.0"
+    title="AI Dev Companion API",
+    description="AI-powered development assistant with RAG and shared conversation history",
+    version="1.0.0"
 )
 
-# ------------------------------------------------------------
-# ✅ CORS Middleware Setup
-# ------------------------------------------------------------
+# CORS configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # For dev: allow all origins; restrict later if needed
+    allow_origins=["*"],  # In production, specify exact origins
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# ------------------------------------------------------------
-# ✅ Database Lifecycle Events
-# ------------------------------------------------------------
-app.add_event_handler("startup", connect_to_mongo)
-app.add_event_handler("shutdown", close_mongo_connection)
+# Include routers
+app.include_router(tutor_router.router, tags=["Tutor"])
+app.include_router(debugger_router.router, tags=["Debugger"])
+app.include_router(rag_router.router, tags=["RAG"])
+app.include_router(users_router.router, tags=["Users"])
+app.include_router(conversations_router.router, tags=["Conversations"])
+app.include_router(sessions_router.router, tags=["Sessions"])
 
-# ------------------------------------------------------------
-# ✅ Router Registrations
-# ------------------------------------------------------------
-app.include_router(users_router.router, prefix="/api", tags=["Users"])
-app.include_router(conversations_router.router, prefix="/api", tags=["Conversations"])
-app.include_router(tutor_router.router, prefix="/api", tags=["AI Tutor"])
-app.include_router(debugger_router.router, prefix="/api", tags=["AI Debugger"])
-app.include_router(rag_router.router, prefix="/api", tags=["RAG"])
-app.include_router(admin_router.router, prefix="/api", tags=["Admin"])
-app.include_router(sessions_router.router, prefix="/api", tags=["Session Management"])
-app.include_router(llm_router.router, prefix="/api", tags=["LLM"])  # ✅ New multi-model endpoint
+@app.on_event("startup")
+async def startup_db_client():
+    """Initialize database connection on startup"""
+    try:
+        await connect_to_mongo()
+        logger.info("Successfully connected to MongoDB")
+    except Exception as e:
+        logger.error(f"Failed to connect to MongoDB: {e}")
 
-# ------------------------------------------------------------
-# ✅ Global Exception Handler
-# ------------------------------------------------------------
-@app.exception_handler(Exception)
-async def global_exception_handler(request: Request, exc: Exception):
-    logger.error(f"Unhandled exception for request {request.url}: {exc}", exc_info=True)
-    return JSONResponse(
-        status_code=500,
-        content={"detail": "An unexpected internal server error occurred."},
-    )
+@app.on_event("shutdown")
+async def shutdown_db_client():
+    """Close database connection on shutdown"""
+    try:
+        await close_mongo_connection()
+        logger.info("Successfully closed MongoDB connection")
+    except Exception as e:
+        logger.error(f"Error closing MongoDB connection: {e}")
 
-# ------------------------------------------------------------
-# ✅ Root Endpoint
-# ------------------------------------------------------------
-@app.get("/", tags=["Root"])
-async def read_root():
-    """
-    Basic API health check endpoint.
-    """
-    return {"message": f"Welcome to {settings.app_name} backend — LLM services are live!"}
+@app.get("/")
+async def root():
+    """Health check endpoint"""
+    return {
+        "status": "online",
+        "message": "AI Dev Companion API is running",
+        "version": "1.0.0",
+        "endpoints": {
+            "tutor": "/api/tutor/chat",
+            "debugger": "/api/debugger/chat",
+            "rag_upload": "/api/rag/upload",
+            "rag_query": "/api/rag/query",
+            "sessions": "/api/sessions/{session_id}/messages"
+        }
+    }
+
+@app.get("/health")
+async def health_check():
+    """Detailed health check"""
+    return {
+        "status": "healthy",
+        "database": "connected" if db_client._client else "disconnected",
+        "services": {
+            "tutor": "active",
+            "debugger": "active",
+            "rag": "active"
+        }
+    }
