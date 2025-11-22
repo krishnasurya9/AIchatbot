@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+pydantic-settings
+together
+langchain-google-genai
+langchain-community
+google-generativeai>=0.6.0
+motor
+PyMuPDF
+python-docx
+pandas
+openpyxl
+python-multipart
