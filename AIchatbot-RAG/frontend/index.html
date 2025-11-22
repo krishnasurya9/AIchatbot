@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>AI Dev Companion Hub</title>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#4a7edc", 
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#1A1A1A", 
+                    },
+                    fontFamily: {
+                        display: ["Space Grotesk"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        lg: "1rem",
+                        xl: "1.5rem",
+                        full: "9999px"
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .dark .glassmorphism {
+            background: rgba(26, 26, 26, 0.5);
+        }
+        .glow-border {
+            box-shadow:
+                0 0 5px theme("colors.primary"),
+                0 0 10px theme("colors.primary"),
+                0 0 20px theme("colors.primary/50");
+        }
+        .neon-glow {
+            box-shadow:
+                0 0 5px #0ff,
+                0 0 10px #0ff,
+                0 0 15px #0ff,
+                0 0 20px #0ff;
+        }
+        /* Custom scrollbar styles */
+        #chat-messages-display::-webkit-scrollbar,
+        #knowledge-tree-container::-webkit-scrollbar,
+        #editor-code-display::-webkit-scrollbar {
+            width: 8px;
+        }
+        #chat-messages-display::-webkit-scrollbar-thumb,
+        #knowledge-tree-container::-webkit-scrollbar-thumb,
+        #editor-code-display::-webkit-scrollbar-thumb {
+            background: theme("colors.primary/40");
+            border-radius: 10px;
+        }
+        #chat-messages-display::-webkit-scrollbar-track,
+        #knowledge-tree-container::-webkit-scrollbar-track,
+        #editor-code-display::-webkit-scrollbar-track {
+            background: transparent;
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200">
+    <div class="relative flex h-screen w-full flex-col overflow-hidden">
+        <div class="flex h-full grow flex-col">
+            <header class="flex items-center justify-between whitespace-nowrap border-b border-white/10 dark:border-white/10 px-6 py-4 glassmorphism sticky top-0 z-50">
+                <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary text-3xl">hub</span>
+                    <h2 class="text-lg font-bold tracking-tight text-gray-900 dark:text-white">AI Dev Companion Hub</h2>
+                </div>
+                <div class="flex flex-1 justify-end items-center gap-4">
+                    <nav class="hidden md:flex items-center gap-6">
+                        <a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Dashboard</a>
+                        <a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Projects</a>
+                        <a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Docs</a>
+                        <a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Community</a>
+                    </nav>
+                    <div class="flex items-center gap-4">
+                        <span id="dev-id-display" class="text-xs text-primary/80 hidden sm:block">User ID: initializing...</span>
+                        <button class="relative rounded-full p-2 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+                            <span class="material-symbols-outlined">notifications</span>
+                            <span class="absolute top-1 right-1 flex h-2 w-2">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+                            </span>
+                        </button>
+                        <div class="size-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1AA7HObhItISBYSLAD-XE7tiVv0VGjF0X3_IqqPX9PoGyfA8NICXk9U17VS7nAN7xGi-gkEmnyxdiEpHtrq6ZRKWKXdDvrDoLNJJ9QGFPWphYubXOechDQCnITZX59EDC6iOLhTWpuDChjawaiaWtBqZmDXelu7t1E4C30m2lBv8RETZKY6jwbNfW8KHzhXOYx0y18EOofdpYGy9FRl_p1xlEl_yDwMsbI4dEUppM0Ld4Cn3muRITUsN0GVCkyZYgJ4Wp0QSzPjc");'></div>
+                    </div>
+                </div>
+            </header>
+            <main class="grid flex-1 grid-cols-12 gap-6 p-6 min-h-0">
+                
+                <div class="col-span-12 md:col-span-6 lg:col-span-3 space-y-6">
+                    <div class="glassmorphism p-4 rounded-xl border border-white/10 lg:h-full lg:min-h-[400px] overflow-y-auto">
+                        <h2 class="text-xl font-bold mb-4 tracking-tight text-gray-900 dark:text-white">AI Brain Zone</h2>
+                        <div>
+                            <div class="border-b border-white/10 flex">
+                                <button class="px-4 py-2 text-sm font-bold border-b-2 border-primary text-primary">Optimization</button>
+                                <button class="px-4 py-2 text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary border-b-2 border-transparent hover:border-primary transition-colors">Error</button>
+                                <button class="px-4 py-2 text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary border-b-2 border-transparent hover:border-primary transition-colors">Performance</button>
+                            </div>
+                            <div class="relative pt-6 pl-4">
+                                <div class="absolute left-9 top-6 bottom-0 w-0.5 bg-primary/20"></div>
+                                <div class="relative flex items-start gap-4 mb-6">
+                                    <div class="relative z-10 flex size-10 items-center justify-center rounded-full bg-primary/20 ring-4 ring-background-light dark:ring-background-dark">
+                                        <span class="material-symbols-outlined text-primary">speed</span>
+                                    </div>
+                                    <div class="pt-1.5 flex-1 glassmorphism p-3 rounded-lg border border-white/10 hover:glow-border transition-shadow duration-300">
+                                        <p class="font-semibold text-gray-900 dark:text-white">Optimize Database Queries</p>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400">2023-09-20</p>
+                                    </div>
+                                </div>
+                                <div class="relative flex items-start gap-4 mb-6">
+                                    <div class="relative z-10 flex size-10 items-center justify-center rounded-full bg-primary/20 ring-4 ring-background-light dark:ring-background-dark">
+                                        <span class="material-symbols-outlined text-primary">code</span>
+                                    </div>
+                                    <div class="pt-1.5 flex-1 glassmorphism p-3 rounded-lg border border-white/10 hover:glow-border transition-shadow duration-300">
+                                        <p class="font-semibold text-gray-900 dark:text-white">Refactor Complex Function</p>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400">2023-09-15</p>
+                                    </div>
+                                </div>
+                                <div class="relative flex items-start gap-4">
+                                    <div class="relative z-10 flex size-10 items-center justify-center rounded-full bg-primary/20 ring-4 ring-background-light dark:ring-background-dark">
+                                        <span class="material-symbols-outlined text-primary">trending_up</span>
+                                    </div>
+                                    <div class="pt-1.5 flex-1 glassmorphism p-3 rounded-lg border border-white/10 hover:glow-border transition-shadow duration-300">
+                                        <p class="font-semibold text-gray-900 dark:text-white">Improve Algorithm Efficiency</p>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400">2023-09-10</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-12 lg:col-span-6 flex flex-col glassmorphism rounded-xl border border-white/10 min-h-[70vh] lg:h-full lg:flex-1">
+                    <div class="p-4 border-b border-white/10">
+                        <h2 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">Hybrid Chat + Editor</h2>
+                        <div class="border-b border-white/10 flex mt-4">
+                            <button id="chat-mode-btn" class="px-4 py-2 text-sm font-bold border-b-2 border-primary text-primary">Chat Mode</button>
+                            <button id="editor-mode-btn" class="px-4 py-2 text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary border-b-2 border-transparent hover:border-primary transition-colors">Inline Editor Mode</button>
+                        </div>
+                    </div>
+                    
+                    <div id="chat-messages-display" class="flex-1 p-4 space-y-6 overflow-y-auto min-h-0">
+                        <div class="flex items-start gap-3">
+                            <div class="size-10 rounded-full bg-cover bg-center shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCVA6mO_BjMj794QUVgRBbXitGGveB9GbRXUF92YRdJ1aFh15sn1DRCPWnxIjgy-hIHER65ZNx_WM0ts27x6rJ0xUJ9DcSb-fY9gF5cDrgb3ibIoCAJl-qDabmV3OGhDD02j6C7DzI1mkENGfn35YOws3ObYLA-0ELfZ2QxOYUAC-MICPVxd7kiLJNvC2bJgOfi6FDXc3SDSM7Op6bUCHO4RlVXJ9ywYQU0pQwM04zF0WAfnwQDvEvf5EyhkbqqTmw2YzuIXTSARVQ");'></div>
+                            <div class="flex flex-col gap-1 items-start">
+                                <p class="text-xs text-gray-500 dark:text-gray-400">AI Assistant</p>
+                                <p class="text-sm rounded-lg p-3 bg-primary/10 dark:bg-primary/20">I've analyzed your code and identified potential optimizations in your database queries. Here's a suggestion:</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="size-10 rounded-full bg-cover bg-center shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuClYYyId3f8zdOmdt3exHNzisj8xA2Ix1dGa5T_Qc6E1Sq4xx_-GgVXeOcsS_xStUMXSIGPBfWEPQ6FPU7QSl2Z25zh23BIZx5ALvl2yA07029esMco2TC4o-l-c6NXygiHZ84NHF8a7GMOVI8ckKZw0xjFq88UkrdzI_RMYaLO17smW1YqhV8sGvdYHjopOS3K5xngcTX2pvwnbE1JIZ-SRWQ-4HvehSpMzdjwr1p82GMcVRU2FPvTKzjyZOw7RZwdpINUQ5fVwsmg");'></div>
+                            <div class="flex flex-col gap-1 items-start w-full">
+                                <p class="text-xs text-gray-500 dark:text-gray-400">AI Assistant</p>
+                                <pre class="w-full text-sm rounded-lg p-3 bg-primary/10 dark:bg-primary/20 text-cyan-400 font-mono overflow-x-auto"><code class="language-sql">SELECT * FROM users WHERE name LIKE '%John%' AND age > 25;</code></pre>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 justify-end">
+                            <div class="flex flex-col gap-1 items-end">
+                                <p class="text-xs text-gray-500 dark:text-gray-400">Developer</p>
+                                <p class="text-sm rounded-lg px-4 py-3 bg-primary text-white">Thanks! I'll try that out.</p>
+                            </div>
+                            <div class="size-10 rounded-full bg-cover bg-center shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1AA7HObhItISBYSLAD-XE7tiVv0VGjF0X3_IqqPX9PoGyfA8NICXk9U17VS7nAN7xGi-gkEmnyxdiEpHtrq6ZRKWKXdDvrDoLNJJ9QGFPWphYubXOechDQCnITZX59EDC6iOLhTWpuDChjawaiaWtBqZmDXelu7t1E4C30m2lBv8RETZKY6jwbNfW8KHzhXOYx0y18EOofdpYGy9FRl_p1xlEl_yDwMsbI4dEUppM0Ld4Cn3muRITUsN0GVCkyZYgJ4Wp0QSzPjc");'></div>
+                        </div>
+                    </div>
+
+                    <div id="inline-editor-view" class="flex-1 p-4 hidden min-h-0 flex-col">
+                        <h3 id="editor-file-title" class="text-lg font-semibold text-primary mb-3">Select a file to view its content.</h3>
+                        <pre id="editor-code-display" class="w-full h-full bg-background-dark/50 p-4 rounded-lg text-sm font-mono text-gray-200 overflow-auto border border-white/10">
+// Code content will appear here when a file is clicked in the Project Knowledge Map.
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="col-span-12 md:col-span-6 lg:col-span-3 space-y-6">
+                    <div class="glassmorphism p-4 rounded-xl border border-white/10 lg:h-full lg:min-h-[400px]">
+                        <h2 class="text-xl font-bold mb-4 tracking-tight text-gray-900 dark:text-white">Project Knowledge Map</h2>
+                        <div>
+                            <div class="border-b border-white/10 flex">
+                                <button class="px-4 py-2 text-sm font-bold border-b-2 border-primary text-primary">Map View</button>
+                                <button class="px-4 py-2 text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary border-b-2 border-transparent hover:border-primary transition-colors">Explorer</button>
+                                <button class="px-4 py-2 text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary border-b-2 border-transparent hover:border-primary transition-colors">AI Recs</button>
+                            </div>
+                            <div id="knowledge-tree-container" class="py-3 overflow-y-auto max-h-[60vh] text-sm">
+                                <p class="text-center text-gray-500 dark:text-gray-400 p-4">Select a folder using the 'Upload' button below to generate the project structure map.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            
+            <footer class="sticky bottom-0 z-50 mt-auto">
+                <div class="p-4">
+                    <div class="max-w-4xl mx-auto glassmorphism p-3 rounded-xl border border-white/10 shadow-lg">
+                        <div class="grid grid-cols-12 items-center gap-4">
+                            <input type="file" id="folder-upload" style="display: none;" webkitdirectory directory multiple />
+                            <div class="col-span-12 sm:col-span-3 flex items-center gap-2">
+                                <button id="upload-folder-btn" class="flex items-center gap-2 w-full justify-center p-2 rounded hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-sm">
+                                    <span class="material-symbols-outlined text-base">upload_file</span>
+                                    Upload
+                                </button>
+                                <button class="flex items-center gap-2 w-full justify-center p-2 rounded hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-sm">
+                                    <span class="material-symbols-outlined text-base">search</span>
+                                    Search
+                                </button>
+                            </div>
+                            <div class="col-span-12 sm:col-span-6">
+                                <div class="relative">
+                                    <input id="command-input" class="w-full rounded-lg bg-background-light/80 dark:bg-gray-900/70 border border-white/10 focus:ring-2 focus:ring-primary focus:border-primary transition-shadow pl-10 pr-4 py-2 text-sm backdrop-blur-sm" placeholder="Natural Language Command Center..." type="text"/>
+                                    <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">prompt_suggestion</span>
+                                </div>
+                            </div>
+                            <div class="col-span-12 sm:col-span-3 flex items-center gap-2">
+                                <button id="run-command-btn" class="flex items-center gap-2 p-2 rounded bg-cyan-400/80 text-black font-bold text-sm hover:bg-cyan-400 neon-glow transition-all w-full justify-center">
+                                    <span class="material-symbols-outlined text-base">play_arrow</span>
+                                    Run
+                                </button>
+                                <button id="apply-fix-btn" class="flex items-center gap-2 w-full justify-center p-2 rounded hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-sm">
+                                    <span class="material-symbols-outlined text-base">magic_button</span>
+                                    Apply Fix
+                                </button>
+                                <button class="flex items-center gap-2 w-full justify-center p-2 rounded hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors text-sm">
+                                    <span class="material-symbols-outlined text-base">model_training</span>
+                                    Model
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    
+    <script type="module" src="js/app.js"></script>
+
+</body>
+</html>

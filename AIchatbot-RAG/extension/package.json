@@ -1,0 +1,46 @@
+{
+    "name": "ai-debugger",
+    "displayName": "AI Debugger",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.90.0"
+    },
+    "main": "./out/extension.js",
+    "activationEvents": [
+        "onView:ai-debugger-view"
+    ],
+    "scripts": {
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./"
+    },
+    "dependencies": {
+        "axios": "^1.7.2",
+        "uuid": "^13.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.12.12",
+        "@types/uuid": "^10.0.0",
+        "@types/vscode": "^1.104.0",
+        "typescript": "^5.4.5"
+    },
+    "contributes": {
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "ai-debugger-container",
+                    "title": "AI Debugger",
+                    "icon": "$(beaker)"
+                }
+            ]
+        },
+        "views": {
+            "ai-debugger-container": [
+                {
+                    "id": "ai-debugger-view",
+                    "name": "AI Debugger",
+                    "type": "webview"
+                }
+            ]
+        }
+    }
+}
