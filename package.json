@@ -1,0 +1,26 @@
+{
+  "name": "ai-vscode-extension",
+  "displayName": "AI Tutor Extension",
+  "version": "0.0.1",
+  "engines": { "vscode": "^1.80.0" },
+  "activationEvents": ["onCommand:ai-tutor.ask"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ai-tutor.ask",
+        "title": "AI Tutor: Ask Question",
+        "category": "AI Tutor"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/vscode": "^1.106.1",
+    "typescript": "^5.3.3"
+  }
+}
