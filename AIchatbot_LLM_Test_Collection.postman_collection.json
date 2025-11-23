@@ -1,0 +1,62 @@
+{
+  "info": {
+    "_postman_id": "8b0f83e4-9d4e-4b79-a3f4-1e567b1f37ef",
+    "name": "AI Chatbot – Gemini LLM Test Collection",
+    "description": "Testing collection for FastAPI Gemini LLM endpoints (/debugger/chat and /tutor/chat).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Debugger Chat – LLM (Gemini Pro)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"query\": \"Why TypeError occurs at line 42 in my Python script?\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/debugger/chat",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "8000",
+          "path": ["debugger", "chat"]
+        },
+        "description": "Sends a debugging question to the Gemini LLM through the FastAPI Debugger route."
+      },
+      "response": []
+    },
+    {
+      "name": "Tutor Chat – LLM (Gemini Pro)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"question\": \"Explain Python decorators with examples.\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/tutor/chat",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "8000",
+          "path": ["tutor", "chat"]
+        },
+        "description": "Sends a conceptual question to the Gemini LLM through the FastAPI Tutor route."
+      },
+      "response": []
+    }
+  ]
+}

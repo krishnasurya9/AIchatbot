@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Dev Companion Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Glassmorphism & Dark Mode Styles */
+        .glass {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-purple-900 to-black min-h-screen text-gray-100">
+    
+    <!-- Header -->
+    <header class="glass border-b border-purple-500/30 p-4 mb-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                🤖 AI Dev Companion Hub
+            </h1>
+            <div class="flex gap-4">
+                <button class="glass px-4 py-2 rounded-lg hover:bg-purple-600/30 transition">
+                    🧠 Brain Zone
+                </button>
+                <button class="glass px-4 py-2 rounded-lg hover:bg-purple-600/30 transition">
+                    📊 Analytics
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-12 gap-6">
+            
+            <!-- Left Sidebar - AI Brain Zone -->
+            <div class="col-span-3">
+                <div class="glass rounded-xl p-6 h-[calc(100vh-200px)] overflow-y-auto">
+                    <h2 class="text-xl font-bold mb-4 text-purple-300">🧠 AI Brain Zone</h2>
+                    <div class="space-y-3">
+                        <div class="bg-purple-900/30 p-3 rounded-lg border border-purple-500/30">
+                            <div class="text-sm text-purple-300">Task Optimization</div>
+                            <div class="text-xs text-gray-400 mt-1">Processing...</div>
+                        </div>
+                        <div class="bg-blue-900/30 p-3 rounded-lg border border-blue-500/30">
+                            <div class="text-sm text-blue-300">Code Analysis</div>
+                            <div class="text-xs text-gray-400 mt-1">Running</div>
+                        </div>
+                        <div class="bg-green-900/30 p-3 rounded-lg border border-green-500/30">
+                            <div class="text-sm text-green-300">Pattern Detection</div>
+                            <div class="text-xs text-gray-400 mt-1">Complete</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Center - Hybrid Chat + Editor -->
+            <div class="col-span-6">
+                <div class="glass rounded-xl h-[calc(100vh-200px)] flex flex-col">
+                    <!-- Mode & Controls -->
+                    <div class="flex border-b border-purple-500/30 p-2 items-center gap-2">
+                        <button class="py-2 px-4 rounded-lg bg-purple-600/50 text-white font-semibold">💬 Chat</button>
+                        <button class="py-2 px-4 rounded-lg hover:bg-purple-600/30 transition">📝 Editor</button>
+                        <select id="modeSelector" class="ml-auto bg-gray-800/50 border border-purple-500/30 rounded-lg px-2 py-2 text-sm">
+                            <option value="fast">⚡ Fast Mode</option>
+                            <option value="deep">🧠 Deep Tutor</option>
+                        </select>
+                        <button id="clearSessionBtn" class="bg-red-600/50 px-3 py-2 rounded-lg hover:bg-red-600/70 transition" title="Clear Session">Clear Session</button>
+                    </div>
+
+                    <!-- Chat Area -->
+                    <div id="chatBox" class="flex-1 overflow-y-auto p-6 space-y-4">
+                        <!-- Messages will appear here -->
+                        <div class="text-center text-gray-400 mt-10">
+                            <p class="text-lg">👋 Welcome to AI Dev Companion</p>
+                            <p class="text-sm mt-2">Start chatting or select code in VS Code</p>
+                        </div>
+                    </div>
+
+                    <div id="typingIndicator" class="p-2 text-xs text-gray-400 hidden">AI is typing…</div>
+
+                    <!-- Input Area -->
+                    <div class="p-4 border-t border-purple-500/30">
+                        <div class="flex gap-2">
+                            <input 
+                                id="commandInput"
+                                type="text" 
+                                placeholder="Type your message or command..." 
+                                class="flex-1 bg-gray-800/50 border border-purple-500/30 rounded-lg px-4 py-3 focus:outline-none focus:border-purple-500 text-white placeholder-gray-500"
+                            />
+                            <button 
+                                onclick="sendMessage()"
+                                class="bg-gradient-to-r from-purple-600 to-pink-600 px-6 py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition">
+                                Send
+                            </button>
+                            <button 
+                                onclick="clearHistory()"
+                                class="bg-red-600/50 px-4 py-3 rounded-lg hover:bg-red-600/70 transition"
+                                title="Clear History">
+                                🗑️
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Sidebar - Project Knowledge Map -->
+            <div class="col-span-3">
+                <div class="glass rounded-xl p-6 h-[calc(100vh-200px)] overflow-y-auto">
+                    <h2 class="text-xl font-bold mb-4 text-purple-300">🗺️ Knowledge Map</h2>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center gap-2 p-2 hover:bg-purple-900/30 rounded cursor-pointer">
+                            <span>📁</span>
+                            <span>src/</span>
+                        </div>
+                        <div class="flex items-center gap-2 p-2 hover:bg-purple-900/30 rounded cursor-pointer ml-4">
+                            <span>📄</span>
+                            <span>main.py</span>
+                        </div>
+                        <div class="flex items-center gap-2 p-2 hover:bg-purple-900/30 rounded cursor-pointer ml-4">
+                            <span>📄</span>
+                            <span>utils.py</span>
+                        </div>
+                        <div class="flex items-center gap-2 p-2 hover:bg-purple-900/30 rounded cursor-pointer">
+                            <span>📁</span>
+                            <span>docs/</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Upload Files Section -->
+                    <div class="mt-6 pt-6 border-t border-purple-500/30">
+                        <h3 class="text-sm font-semibold text-purple-300 mb-3">📤 Upload Files</h3>
+                        <input 
+                            type="file" 
+                            id="fileUpload" 
+                            multiple 
+                            class="text-xs w-full"
+                            accept=".txt,.md,.pdf,.docx,.py,.js,.java,.cpp"
+                        />
+                        <button 
+                            onclick="uploadFiles()"
+                            class="w-full mt-2 bg-purple-600/50 px-3 py-2 rounded text-sm hover:bg-purple-600/70 transition">
+                            Upload to RAG
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Replace everything between <script> and </script> with this: -->
+    <script>
+        const BACKEND_URL = 'http://localhost:8000';
+        let sessionId = localStorage.getItem('sessionId');
+        
+        // Generate or retrieve session ID
+        if (!sessionId) {
+            sessionId = generateUUID();
+            localStorage.setItem('sessionId', sessionId);
+        }
+        
+        console.log('Session ID:', sessionId);
+        
+        function generateUUID() {
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                const r = Math.random() * 16 | 0;
+                const v = c === 'x' ? r : (r & 0x3 | 0x8);
+                return v.toString(16);
+            });
+        }
+        
+        // Load conversation history on page load
+        async function loadConversationHistory() {
+            try {
+                const response = await fetch(`${BACKEND_URL}/api/sessions/${sessionId}/messages`);
+                const data = await response.json();
+                
+                if (data.messages && data.messages.length > 0) {
+                    // Clear welcome message
+                    document.getElementById('chatBox').innerHTML = '';
+                    
+                    data.messages.forEach(msg => {
+                        displayMessage(msg.content, msg.role);
+                    });
+                }
+            } catch (error) {
+                console.error('Failed to load conversation history:', error);
+            }
+        }
+        
+        // Send message and sync to backend
+        async function sendMessage() {
+            const input = document.getElementById('commandInput');
+            const message = input.value.trim();
+            
+            if (!message) return;
+            
+            displayMessage(message, 'user');
+            input.value = '';
+            
+            // Sync user message to backend
+            await syncMessageToBackend(message, 'user');
+            
+            try {
+                // Call AI service (using debugger endpoint as default)
+                const response = await fetch(`${BACKEND_URL}/api/debugger/chat`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        session_id: sessionId,
+                        query: message,
+                        mode: document.getElementById('modeSelector').value
+                    })
+                });
+                
+                const data = await response.json();
+                const aiResponse = data.response || JSON.stringify(data);
+                
+                displayMessage(aiResponse, 'assistant');
+                
+                // Sync AI response to backend
+                await syncMessageToBackend(aiResponse, 'assistant');
+                showTyping(false);
+                
+            } catch (error) {
+                console.error('Error:', error);
+                displayMessage('Error: Failed to get AI response', 'error');
+                showTyping(false);
+            }
+        }
+        
+        async function syncMessageToBackend(content, role) {
+            try {
+                await fetch(`${BACKEND_URL}/api/sessions/${sessionId}/messages`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        role: role,
+                        content: content,
+                        timestamp: new Date().toISOString()
+                    })
+                });
+            } catch (error) {
+                console.error('Failed to sync message:', error);
+            }
+        }
+        
+        function displayMessage(content, role) {
+            const chatBox = document.getElementById('chatBox');
+            
+            // Remove welcome message if it exists
+            const welcomeMsg = chatBox.querySelector('.text-center.text-gray-400');
+            if (welcomeMsg) {
+                welcomeMsg.remove();
+            }
+            
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `mb-4 ${role === 'user' ? 'text-right' : 'text-left'}`;
+            
+            const bubble = document.createElement('div');
+            bubble.className = `inline-block max-w-3/4 p-3 rounded-lg ${
+                role === 'user' 
+                    ? 'bg-purple-600 text-white' 
+                    : role === 'error'
+                    ? 'bg-red-600 text-white'
+                    : 'bg-gray-800 text-gray-100'
+            }`;
+            const ts = new Date().toLocaleTimeString();
+            bubble.innerHTML = `<div>${content}</div><div class="text-xs opacity-70 mt-1">${ts}</div>`;
+            
+            messageDiv.appendChild(bubble);
+            chatBox.appendChild(messageDiv);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+        
+        // Clear conversation history
+        async function clearHistory() {
+            if (!confirm('Clear all conversation history?')) return;
+            
+            try {
+                await fetch(`${BACKEND_URL}/api/sessions/${sessionId}/clear`, { method: 'POST' });
+                
+                document.getElementById('chatBox').innerHTML = `
+                    <div class="text-center text-gray-400 mt-10">
+                        <p class="text-lg">👋 Welcome to AI Dev Companion</p>
+                        <p class="text-sm mt-2">Start chatting or select code in VS Code</p>
+                    </div>
+                `;
+                alert('Conversation history cleared');
+            } catch (error) {
+                console.error('Failed to clear history:', error);
+                alert('Failed to clear conversation history');
+            }
+        }
+
+        function showTyping(show) {
+            const el = document.getElementById('typingIndicator');
+            if (show) {
+                el.classList.remove('hidden');
+            } else {
+                el.classList.add('hidden');
+            }
+        }
+
+        document.getElementById('clearSessionBtn').addEventListener('click', clearHistory);
+        
+        // Upload files to RAG
+        async function uploadFiles() {
+            const fileInput = document.getElementById('fileUpload');
+            const files = fileInput.files;
+            
+            if (files.length === 0) {
+                alert('Please select files to upload');
+                return;
+            }
+            
+            const formData = new FormData();
+            for (let i = 0; i < files.length; i++) {
+                formData.append('files', files[i]);
+            }
+            formData.append('session_id', sessionId);
+            
+            try {
+                const response = await fetch(`${BACKEND_URL}/api/rag/upload`, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const data = await response.json();
+                alert(`Successfully uploaded ${files.length} file(s) to RAG system`);
+                fileInput.value = '';
+            } catch (error) {
+                console.error('Upload error:', error);
+                alert('Failed to upload files');
+            }
+        }
+        
+        // Event listeners
+        document.getElementById('commandInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });
+        
+        // Load history on page load
+        loadConversationHistory();
+    </script>
+
+</body>
+</html>
