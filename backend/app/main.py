@@ -77,3 +77,6 @@ async def health_check():
             "rag": "active"
         }
     }
+@app.get("/")
+def root():
+    return {"message": "AI Tutor Backend running successfully!"}
