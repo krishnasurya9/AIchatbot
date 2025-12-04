@@ -210,13 +210,12 @@ class AIDebuggerViewProvider implements vscode.WebviewViewProvider {
 
         try {
             // Determine endpoint based on mode
-            const endpoint = mode === 'tutor' ? '/api/tutor/chat' : '/api/debugger/chat';
+            const endpoint = mode === 'tutor' ? '/tutor/chat' : '/debugger/chat';
 
             // Call backend API
             const response = await axios.post<ChatResponse>(`${BACKEND_URL}${endpoint}`, {
                 session_id: this._sessionId,
-                query: message,
-                mode: mode
+                message: message
             });
 
             const aiResponse = response.data;
@@ -258,14 +257,14 @@ class AIDebuggerViewProvider implements vscode.WebviewViewProvider {
     private async syncMessagesToBackend(userMessage: Message, assistantMessage: Message) {
         try {
             // Sync user message
-            await axios.post(`${BACKEND_URL}/api/sessions/${this._sessionId}/messages`, {
+            await axios.post(`${BACKEND_URL}/sessions/${this._sessionId}/messages`, {
                 role: userMessage.role,
                 content: userMessage.content,
                 timestamp: userMessage.timestamp
             });
 
             // Sync assistant message
-            await axios.post(`${BACKEND_URL}/api/sessions/${this._sessionId}/messages`, {
+            await axios.post(`${BACKEND_URL}/sessions/${this._sessionId}/messages`, {
                 role: assistantMessage.role,
                 content: assistantMessage.content,
                 timestamp: assistantMessage.timestamp
@@ -279,7 +278,7 @@ class AIDebuggerViewProvider implements vscode.WebviewViewProvider {
 
     private async loadConversationHistory() {
         try {
-            const response = await axios.get(`${BACKEND_URL}/api/sessions/${this._sessionId}/messages`);
+            const response = await axios.get(`${BACKEND_URL}/sessions/${this._sessionId}/messages`);
             this._messageHistory = response.data.messages || [];
             console.log(`Loaded ${this._messageHistory.length} messages from backend`);
         } catch (error) {
@@ -290,7 +289,7 @@ class AIDebuggerViewProvider implements vscode.WebviewViewProvider {
 
     private async clearHistory() {
         try {
-            await axios.delete(`${BACKEND_URL}/api/sessions/${this._sessionId}/messages`);
+            await axios.delete(`${BACKEND_URL}/sessions/${this._sessionId}/messages`);
             this._messageHistory = [];
             
             if (this._view) {

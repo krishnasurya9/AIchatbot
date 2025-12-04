@@ -188,12 +188,11 @@ class AIDebuggerViewProvider {
         });
         try {
             // Determine endpoint based on mode
-            const endpoint = mode === 'tutor' ? '/api/tutor/chat' : '/api/debugger/chat';
+            const endpoint = mode === 'tutor' ? '/tutor/chat' : '/debugger/chat';
             // Call backend API
             const response = await axios_1.default.post(`${BACKEND_URL}${endpoint}`, {
                 session_id: this._sessionId,
-                query: message,
-                mode: mode
+                message: message
             });
             const aiResponse = response.data;
             // Add AI response to history
@@ -227,13 +226,13 @@ class AIDebuggerViewProvider {
     async syncMessagesToBackend(userMessage, assistantMessage) {
         try {
             // Sync user message
-            await axios_1.default.post(`${BACKEND_URL}/api/sessions/${this._sessionId}/messages`, {
+            await axios_1.default.post(`${BACKEND_URL}/sessions/${this._sessionId}/messages`, {
                 role: userMessage.role,
                 content: userMessage.content,
                 timestamp: userMessage.timestamp
             });
             // Sync assistant message
-            await axios_1.default.post(`${BACKEND_URL}/api/sessions/${this._sessionId}/messages`, {
+            await axios_1.default.post(`${BACKEND_URL}/sessions/${this._sessionId}/messages`, {
                 role: assistantMessage.role,
                 content: assistantMessage.content,
                 timestamp: assistantMessage.timestamp
@@ -246,7 +245,7 @@ class AIDebuggerViewProvider {
     }
     async loadConversationHistory() {
         try {
-            const response = await axios_1.default.get(`${BACKEND_URL}/api/sessions/${this._sessionId}/messages`);
+            const response = await axios_1.default.get(`${BACKEND_URL}/sessions/${this._sessionId}/messages`);
             this._messageHistory = response.data.messages || [];
             console.log(`Loaded ${this._messageHistory.length} messages from backend`);
         }
@@ -257,7 +256,7 @@ class AIDebuggerViewProvider {
     }
     async clearHistory() {
         try {
-            await axios_1.default.delete(`${BACKEND_URL}/api/sessions/${this._sessionId}/messages`);
+            await axios_1.default.delete(`${BACKEND_URL}/sessions/${this._sessionId}/messages`);
             this._messageHistory = [];
             if (this._view) {
                 this._view.webview.postMessage({
