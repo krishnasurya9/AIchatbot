@@ -5,6 +5,7 @@ backend/.env.*
 
 # Python ignores
 __pycache__/
+__pycache__
 *.pyc
 
 # Logs
