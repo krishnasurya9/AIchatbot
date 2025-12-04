@@ -1,16 +1,60 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.app.routers import tutor_router, debugger_router, rag_router, users_router, conversations_router, sessions_router, admin_router
-from backend.app.database.client import db_client, connect_to_mongo, close_mongo_connection
+from contextlib import asynccontextmanager
 import logging
+
+# Imports for Routers
+from backend.app.routers import (
+    tutor_router,
+    debugger_router,
+    rag_router,
+    users_router,
+    conversations_router,
+    sessions_router,
+    admin_router
+)
+
+# Imports for Database and AI Model
+from backend.app.database.client import db_client, connect_to_mongo, close_mongo_connection
+from backend.app.llm.model_loader import init_models_async  # <--- THIS WAS MISSING
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+
+# --- LIFESPAN (Replaces on_event startup/shutdown) ---
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # 1. STARTUP LOGIC
+    try:
+        # Connect to Database
+        await connect_to_mongo()
+        logger.info("Successfully connected to MongoDB")
+
+        # Initialize AI Models (Fixes your RuntimeError)
+        logger.info("Initializing AI models...")
+        await init_models_async()
+        logger.info("AI Models initialized successfully")
+
+    except Exception as e:
+        logger.error(f"Startup error: {e}")
+
+    yield  # The application runs here
+
+    # 2. SHUTDOWN LOGIC
+    try:
+        await close_mongo_connection()
+        logger.info("Successfully closed MongoDB connection")
+    except Exception as e:
+        logger.error(f"Error closing MongoDB connection: {e}")
+
+
+# --- APP DEFINITION ---
 app = FastAPI(
     title="AI Dev Companion API",
     description="AI-powered development assistant with RAG and shared conversation history",
-    version="1.0.0"
+    version="1.0.0",
+    lifespan=lifespan  # <--- Attach the lifespan logic here
 )
 
 # CORS configuration
@@ -31,23 +75,6 @@ app.include_router(conversations_router.router, tags=["Conversations"])
 app.include_router(sessions_router.router, tags=["Sessions"])
 app.include_router(admin_router.router, tags=["Debug"])
 
-@app.on_event("startup")
-async def startup_db_client():
-    """Initialize database connection on startup"""
-    try:
-        await connect_to_mongo()
-        logger.info("Successfully connected to MongoDB")
-    except Exception as e:
-        logger.error(f"Failed to connect to MongoDB: {e}")
-
-@app.on_event("shutdown")
-async def shutdown_db_client():
-    """Close database connection on shutdown"""
-    try:
-        await close_mongo_connection()
-        logger.info("Successfully closed MongoDB connection")
-    except Exception as e:
-        logger.error(f"Error closing MongoDB connection: {e}")
 
 @app.get("/")
 async def root():
@@ -65,6 +92,7 @@ async def root():
         }
     }
 
+
 @app.get("/health")
 async def health_check():
     """Detailed health check"""
@@ -77,6 +105,3 @@ async def health_check():
             "rag": "active"
         }
     }
-@app.get("/")
-def root():
-    return {"message": "AI Tutor Backend running successfully!"}
