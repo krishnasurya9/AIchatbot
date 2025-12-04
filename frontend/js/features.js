@@ -1,7 +1,7 @@
 // ============================================================
 // 🔧 Configuration
 // ============================================================
-const BACKEND_URL = "http://localhost:8000/chat";  // Your FastAPI backend /chat endpoint
+const BACKEND_URL = "http://localhost:8000/api/rag/query";  // Your FastAPI backend /api/rag/query endpoint
 
 export let uploadedFileContents = {}; 
 
@@ -111,13 +111,13 @@ export const sendMessage = async () => {
         const response = await fetch(BACKEND_URL, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ message: userPrompt }),
+            body: JSON.stringify({ question: userPrompt }),
         });
 
         const data = await response.json();
         loadingIndicator.remove();
 
-        const botReply = data.reply || "⚠️ No response from backend.";
+        const botReply = data.answer || "⚠️ No response from backend.";
         displayMessage(botReply, 'ai', 'text');
         console.log("✅ Reply received from backend:", botReply);
     } catch (error) {
