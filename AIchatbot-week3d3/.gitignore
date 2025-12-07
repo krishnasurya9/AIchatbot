@@ -1,0 +1,16 @@
+# Ignore environment files
+backend/.env
+backend/.env.local
+backend/.env.*
+
+# Python ignores
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+node_modules/
