@@ -1,7 +1,7 @@
 import logging
 import sys
 import os
-from backend.app.config import settings
+from app.config import settings
 
 # Ensure the log directory exists
 log_file_path = settings.log_file

@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
 from typing import Optional
-from backend.app.services import debugger
+from app.services import debugger
 
 router = APIRouter(prefix="/api/debugger", tags=["Debugger"])
 

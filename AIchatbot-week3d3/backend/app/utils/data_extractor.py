@@ -1,7 +1,7 @@
 import pandas as pd
 from io import BytesIO, StringIO
 from typing import List, Dict, Union
-from backend.app.logger import logger
+from app.logger import logger
 
 async def process_data(content: bytes, file_name: str, file_type: str) -> List[Dict[str, Union[str, dict]]]:
     chunks = []

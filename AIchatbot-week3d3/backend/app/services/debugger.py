@@ -1,9 +1,9 @@
-from backend.app.logger import logger
-from backend.app.llm.model_loader import get_gemini_model
-from backend.app.memory import get_session_history
+from app.logger import logger
+from app.llm.model_loader import get_gemini_model
+from app.memory import get_session_history
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables.history import RunnableWithMessageHistory
-from backend.app.services import rag
+from app.services import rag
 
 SYSTEM_PROMPT = (
     "You are a professional Coding Assistant powered by Gemini. "

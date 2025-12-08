@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
 from typing import Optional
-from backend.app.services import tutor
+from app.services import tutor
 
 router = APIRouter(prefix="/api/tutor", tags=["Tutor"])
 

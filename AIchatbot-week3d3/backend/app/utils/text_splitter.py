@@ -1,8 +1,11 @@
-from langchain.text_splitter import MarkdownHeaderTextSplitter, RecursiveCharacterTextSplitter
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_experimental.text_splitter import MarkdownHeaderTextSplitter
+
+
 from langchain_core.documents import Document
 from typing import List, Dict, Union
-from backend.app.config import settings
-from backend.app.logger import logger
+from app.config import settings
+from app.logger import logger
 
 async def process_text(content: str, file_name: str, file_type: str) -> List[Dict[str, Union[str, dict]]]:
     chunks = []

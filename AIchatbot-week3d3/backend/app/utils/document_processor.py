@@ -1,7 +1,7 @@
 import mimetypes
-from backend.app.utils import pdf_extractor, docx_extractor, text_splitter, data_extractor, code_splitter
-from backend.app.logger import logger
-from backend.app.config import settings
+from app.utils import pdf_extractor, docx_extractor, text_splitter, data_extractor, code_splitter
+from app.logger import logger
+from app.config import settings
 from typing import List, Dict, Union
 
 async def process_file(file_name: str, file_content: bytes) -> List[Dict[str, Union[str, dict]]]:

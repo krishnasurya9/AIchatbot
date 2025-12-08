@@ -1,8 +1,8 @@
 import json
-from backend.app.logger import logger
-from backend.app.memory import pop_error_context
-from backend.app.llm.model_loader import get_gemini_model
-from backend.app.services import rag
+from app.logger import logger
+from app.memory import pop_error_context
+from app.llm.model_loader import get_gemini_model
+from app.services import rag
 
 DEBUG_PROMPT = """You are an AI coding tutor helping a user with a specific error.
 Format response as JSON: "explanation", "stepsToFix" (array), "resources" (array of URLs).

@@ -1,6 +1,6 @@
 from langchain.text_splitter import RecursiveCharacterTextSplitter, Language
 from typing import List, Dict, Union
-from backend.app.logger import logger
+from app.logger import logger
 
 async def process(content: str, file_name: str, file_type: str) -> List[Dict[str, Union[str, dict]]]:
     lang = Language.PYTHON if file_type == ".py" else Language.JS if file_type == ".js" else None

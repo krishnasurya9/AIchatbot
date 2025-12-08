@@ -1,7 +1,7 @@
-from backend.app.logger import logger
-from backend.app.utils import document_processor
-from backend.app.database.client import db_client
-from backend.app.llm.model_loader import get_gemini_model
+from app.logger import logger
+from app.utils import document_processor
+from app.database.client import db_client
+from app.llm.model_loader import get_gemini_model
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from typing import List, Dict, Optional, Any, Tuple

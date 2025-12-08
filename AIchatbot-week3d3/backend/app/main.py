@@ -4,7 +4,7 @@ from contextlib import asynccontextmanager
 import logging
 
 # Imports for Routers
-from backend.app.routers import (
+from app.routers import (
     tutor_router,
     debugger_router,
     rag_router,
@@ -14,94 +14,78 @@ from backend.app.routers import (
     admin_router
 )
 
-# Imports for Database and AI Model
-from backend.app.database.client import db_client, connect_to_mongo, close_mongo_connection
-from backend.app.llm.model_loader import init_models_async  # <--- THIS WAS MISSING
+# Imports for Database + Model initialization
+from app.database.client import connect_to_mongo, close_mongo_connection, db_client
+from app.llm.model_loader import init_models_async
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-# --- LIFESPAN (Replaces on_event startup/shutdown) ---
+# -------------------- LIFESPAN SETUP --------------------
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # 1. STARTUP LOGIC
-    try:
-        # Connect to Database
-        await connect_to_mongo()
-        logger.info("Successfully connected to MongoDB")
+    logger.info("🚀 Application starting up...")
 
-        # Initialize AI Models (Fixes your RuntimeError)
-        logger.info("Initializing AI models...")
-        await init_models_async()
-        logger.info("AI Models initialized successfully")
+    # Connect to DB
+    await connect_to_mongo()
+    logger.info("🗄️ MongoDB Connected")
 
-    except Exception as e:
-        logger.error(f"Startup error: {e}")
+    # Initialize AI models
+    logger.info("⚙️ Initializing AI Models...")
+    await init_models_async()
+    logger.info("🤖 AI Models Ready")
 
-    yield  # The application runs here
+    yield  # Application running...
 
-    # 2. SHUTDOWN LOGIC
-    try:
-        await close_mongo_connection()
-        logger.info("Successfully closed MongoDB connection")
-    except Exception as e:
-        logger.error(f"Error closing MongoDB connection: {e}")
+    # Shutdown cleanup
+    await close_mongo_connection()
+    logger.info("🔌 MongoDB Connection Closed")
+    logger.info("👋 Application shutdown complete")
 
 
-# --- APP DEFINITION ---
+# -------------------- FASTAPI APP INSTANCE --------------------
 app = FastAPI(
     title="AI Dev Companion API",
-    description="AI-powered development assistant with RAG and shared conversation history",
-    version="1.0.0",
-    lifespan=lifespan  # <--- Attach the lifespan logic here
+    description="Backend powering tutor, debugger & shared chat history",
+    version="2.0.0",
+    lifespan=lifespan
 )
 
-# CORS configuration
+
+# -------------------- CORS --------------------
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, specify exact origins
+    allow_origins=["*"],  # TODO: restrict later in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# Include routers
+
+# -------------------- ROUTERS --------------------
 app.include_router(tutor_router.router, tags=["Tutor"])
 app.include_router(debugger_router.router, tags=["Debugger"])
 app.include_router(rag_router.router, tags=["RAG"])
 app.include_router(users_router.router, tags=["Users"])
 app.include_router(conversations_router.router, tags=["Conversations"])
-app.include_router(sessions_router.router, tags=["Sessions"])
-app.include_router(admin_router.router, tags=["Debug"])
+app.include_router(sessions_router.router, prefix="/api", tags=["Sessions"])
+app.include_router(admin_router.router, tags=["Admin"])
 
 
-@app.get("/")
+# -------------------- HEALTH CHECK ROUTES --------------------
+@app.get("/", tags=["Root"])
 async def root():
-    """Health check endpoint"""
     return {
         "status": "online",
-        "message": "AI Dev Companion API is running",
-        "version": "1.0.0",
-        "endpoints": {
-            "tutor": "/api/tutor/chat",
-            "debugger": "/api/debugger/chat",
-            "rag_upload": "/api/rag/upload",
-            "rag_query": "/api/rag/query",
-            "sessions": "/api/sessions/{session_id}/messages"
-        }
+        "message": "AI Backend is running!",
+        "version": "2.0.0"
     }
 
 
-@app.get("/health")
+@app.get("/health", tags=["Health"])
 async def health_check():
-    """Detailed health check"""
     return {
         "status": "healthy",
-        "database": "connected" if db_client._client else "disconnected",
-        "services": {
-            "tutor": "active",
-            "debugger": "active",
-            "rag": "active"
-        }
+        "database": "connected" if db_client._client else "disconnected"
     }

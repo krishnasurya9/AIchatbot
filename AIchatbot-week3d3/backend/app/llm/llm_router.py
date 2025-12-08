@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
-from backend.app.llm.model_loader import get_together_ai_client, get_gemini_model
-from backend.app.logger import logger
+from app.llm.model_loader import get_together_ai_client, get_gemini_model
+from app.logger import logger
 
 router = APIRouter()
 

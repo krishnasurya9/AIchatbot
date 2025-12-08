@@ -1,5 +1,17 @@
-from backend.app.logger import logger
-from langchain_community.chat_message_histories import ChatMessageHistory
+from app.logger import logger
+class ChatMessageHistory:
+    def __init__(self):
+        self.messages = []
+
+    def add_ai_message(self, content):
+        self.messages.append({"role": "assistant", "content": content})
+
+    def add_user_message(self, content):
+        self.messages.append({"role": "user", "content": content})
+
+    def clear(self):
+        self.messages = []
+
 from uuid import uuid4
 
 # In-memory stores that can be replaced by a database layer

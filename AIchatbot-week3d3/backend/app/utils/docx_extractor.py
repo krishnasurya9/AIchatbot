@@ -1,7 +1,7 @@
 import docx
 from io import BytesIO
 from typing import List, Dict, Union
-from backend.app.logger import logger
+from app.logger import logger
 
 async def process_docx(content: bytes, file_name: str) -> List[Dict[str, Union[str, dict]]]:
     chunks = []

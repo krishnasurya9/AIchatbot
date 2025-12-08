@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     """
     # Application settings
     app_name: str = "Unified AI Backend"
-    log_file: str = "backend_app.log"
+    log_file: str = "app.log"
 
     # API Keys for different LLM providers
     together_api_key: str | None = None

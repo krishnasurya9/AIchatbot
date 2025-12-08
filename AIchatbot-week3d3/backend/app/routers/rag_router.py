@@ -1,9 +1,9 @@
 from fastapi import APIRouter, UploadFile, File, Form, HTTPException, BackgroundTasks, Depends
 from typing import List, Optional
 import uuid
-from backend.app.services import rag
-from backend.app.models.schemas import RAGQuery, RAGUploadResponse, RAGQueryResponse, RAGStatusResponse, RAGDeleteResponse
-from backend.app.config import settings
+from app.services import rag
+from app.models.schemas import RAGQuery, RAGUploadResponse, RAGQueryResponse, RAGStatusResponse, RAGDeleteResponse
+from app.config import settings
 
 router = APIRouter(
     prefix="/api/rag",
