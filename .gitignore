@@ -3,7 +3,8 @@ backend/.env
 backend/.env.local
 backend/.env.*
 .env
-
+.node_modules
+node_modules
 
 # Python ignores
 __pycache__/
