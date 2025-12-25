@@ -1,0 +1,5 @@
+{
+  "session_id": "test-session-123",
+  "message": "Hello, what can you help me with?",
+  "use_rag": true
+}
