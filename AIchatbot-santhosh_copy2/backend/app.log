@@ -1,0 +1,2565 @@
+2025-12-23 21:28:52,383 - app.main - INFO - [main:28] - 🚀 Application starting up...
+2025-12-23 21:28:52,383 - backend - INFO - [client:12] - Connecting to MongoDB at mongodb://localhost:27017/...
+2025-12-23 21:28:52,912 - backend - INFO - [client:14] - MongoDB client initialized.
+2025-12-23 21:28:52,913 - backend - INFO - [client:47] - Creating database indexes...
+2025-12-23 21:28:52,986 - backend - INFO - [client:70] - Database indexes checked/created.
+2025-12-23 21:28:52,987 - backend - WARNING - [client:71] - Remember to create a Vector Search Index named 'vector_index' on the 'all_chunks' collection in your MongoDB Atlas deployment.
+2025-12-23 21:28:52,987 - app.main - INFO - [main:32] - 🗄️ MongoDB Connected
+2025-12-23 21:28:52,987 - app.main - INFO - [main:35] - ⚙️ Initializing AI Models...
+2025-12-23 21:28:52,988 - app.llm.model_loader - INFO - [model_loader:120] - Checking API key... Found: False
+2025-12-23 21:28:52,988 - app.llm.model_loader - ERROR - [model_loader:123] - Gemini API key missing (GEMINI_API_KEY or GOOGLE_API_KEY).
+2025-12-23 21:28:52,988 - app.main - INFO - [main:37] - 🤖 AI Models Ready
+2025-12-23 22:45:13,445 - app.main - INFO - [main:28] - 🚀 Application starting up...
+2025-12-23 22:45:13,446 - backend - INFO - [client:12] - Connecting to MongoDB at mongodb://localhost:27017/...
+2025-12-23 22:45:13,892 - backend - INFO - [client:14] - MongoDB client initialized.
+2025-12-23 22:45:13,893 - backend - INFO - [client:47] - Creating database indexes...
+2025-12-23 22:45:13,969 - backend - INFO - [client:70] - Database indexes checked/created.
+2025-12-23 22:45:13,970 - backend - WARNING - [client:71] - Remember to create a Vector Search Index named 'vector_index' on the 'all_chunks' collection in your MongoDB Atlas deployment.
+2025-12-23 22:45:13,970 - app.main - INFO - [main:32] - 🗄️ MongoDB Connected
+2025-12-23 22:45:13,970 - app.main - INFO - [main:35] - ⚙️ Initializing AI Models...
+2025-12-23 22:45:13,970 - app.llm.model_loader - INFO - [model_loader:120] - Checking API key... Found: False
+2025-12-23 22:45:13,970 - app.llm.model_loader - ERROR - [model_loader:123] - Gemini API key missing (GEMINI_API_KEY or GOOGLE_API_KEY).
+2025-12-23 22:45:13,971 - app.main - INFO - [main:37] - 🤖 AI Models Ready
+2025-12-24 00:35:54,341 - app.main - INFO - [main:28] - 🚀 Application starting up...
+2025-12-24 00:35:54,342 - backend - INFO - [client:12] - Connecting to MongoDB at mongodb://localhost:27017/...
+2025-12-24 00:35:55,146 - backend - INFO - [client:14] - MongoDB client initialized.
+2025-12-24 00:35:55,146 - backend - INFO - [client:47] - Creating database indexes...
+2025-12-24 00:35:55,229 - backend - INFO - [client:70] - Database indexes checked/created.
+2025-12-24 00:35:55,229 - backend - WARNING - [client:71] - Remember to create a Vector Search Index named 'vector_index' on the 'all_chunks' collection in your MongoDB Atlas deployment.
+2025-12-24 00:35:55,229 - app.main - INFO - [main:32] - 🗄️ MongoDB Connected
+2025-12-24 00:35:55,230 - app.main - INFO - [main:35] - ⚙️ Initializing AI Models...
+2025-12-24 00:35:55,230 - app.llm.model_loader - INFO - [model_loader:120] - Checking API key... Found: False
+2025-12-24 00:35:55,230 - app.llm.model_loader - ERROR - [model_loader:123] - Gemini API key missing (GEMINI_API_KEY or GOOGLE_API_KEY).
+2025-12-24 00:35:55,230 - app.main - INFO - [main:37] - 🤖 AI Models Ready
+2025-12-24 01:24:46,761 - backend - INFO - [client:27] - MongoDB connection closed.
+2025-12-24 01:24:46,765 - app.main - INFO - [main:43] - 🔌 MongoDB Connection Closed
+2025-12-24 01:24:46,766 - app.main - INFO - [main:44] - 👋 Application shutdown complete
+2025-12-24 01:26:36,911 - app.main - INFO - [main:28] - 🚀 Application starting up...
+2025-12-24 01:26:36,912 - backend - INFO - [client:12] - Connecting to MongoDB at mongodb://localhost:27017/...
+2025-12-24 01:26:36,967 - backend - INFO - [client:14] - MongoDB client initialized.
+2025-12-24 01:26:36,968 - backend - INFO - [client:47] - Creating database indexes...
+2025-12-24 01:26:37,034 - backend - INFO - [client:70] - Database indexes checked/created.
+2025-12-24 01:26:37,034 - backend - WARNING - [client:71] - Remember to create a Vector Search Index named 'vector_index' on the 'all_chunks' collection in your MongoDB Atlas deployment.
+2025-12-24 01:26:37,034 - app.main - INFO - [main:32] - 🗄️ MongoDB Connected
+2025-12-24 01:26:37,035 - app.main - INFO - [main:35] - ⚙️ Initializing AI Models...
+2025-12-24 01:26:37,035 - app.llm.model_loader - INFO - [model_loader:120] - Checking API key... Found: False
+2025-12-24 01:26:37,035 - app.llm.model_loader - ERROR - [model_loader:123] - Gemini API key missing (GEMINI_API_KEY or GOOGLE_API_KEY).
+2025-12-24 01:26:37,035 - app.main - INFO - [main:37] - 🤖 AI Models Ready
+2025-12-24 15:18:38,672 - app.main - INFO - [main:28] - 🚀 Application starting up...
+2025-12-24 15:18:38,673 - backend - INFO - [client:12] - Connecting to MongoDB at mongodb://localhost:27017/...
+2025-12-24 15:18:39,064 - backend - INFO - [client:14] - MongoDB client initialized.
+2025-12-24 15:18:39,065 - backend - INFO - [client:47] - Creating database indexes...
+2025-12-24 15:18:39,123 - backend - INFO - [client:70] - Database indexes checked/created.
+2025-12-24 15:18:39,124 - backend - WARNING - [client:71] - Remember to create a Vector Search Index named 'vector_index' on the 'all_chunks' collection in your MongoDB Atlas deployment.
+2025-12-24 15:18:39,124 - app.main - INFO - [main:32] - 🗄️ MongoDB Connected
+2025-12-24 15:18:39,125 - app.main - INFO - [main:35] - ⚙️ Initializing AI Models...
+2025-12-24 15:18:39,125 - app.llm.model_loader - INFO - [model_loader:120] - Checking API key... Found: False
+2025-12-24 15:18:39,125 - app.llm.model_loader - ERROR - [model_loader:123] - Gemini API key missing (GEMINI_API_KEY or GOOGLE_API_KEY).
+2025-12-24 15:18:39,125 - app.main - INFO - [main:37] - 🤖 AI Models Ready
+2025-12-24 15:24:01,485 - app.main - INFO - [main:28] - 🚀 Application starting up...
+2025-12-24 15:24:01,486 - backend - INFO - [client:12] - Connecting to MongoDB at mongodb://localhost:27017/...
+2025-12-24 15:24:02,084 - backend - INFO - [client:14] - MongoDB client initialized.
+2025-12-24 15:24:02,084 - backend - INFO - [client:47] - Creating database indexes...
+2025-12-24 15:24:02,135 - backend - INFO - [client:70] - Database indexes checked/created.
+2025-12-24 15:24:02,136 - backend - WARNING - [client:71] - Remember to create a Vector Search Index named 'vector_index' on the 'all_chunks' collection in your MongoDB Atlas deployment.
+2025-12-24 15:24:02,136 - app.main - INFO - [main:32] - 🗄️ MongoDB Connected
+2025-12-24 15:24:02,137 - app.main - INFO - [main:35] - ⚙️ Initializing AI Models...
+2025-12-24 15:24:02,137 - app.llm.model_loader - INFO - [model_loader:120] - Checking API key... Found: False
+2025-12-24 15:24:02,137 - app.llm.model_loader - ERROR - [model_loader:123] - Gemini API key missing (GEMINI_API_KEY or GOOGLE_API_KEY).
+2025-12-24 15:24:02,138 - app.main - INFO - [main:37] - 🤖 AI Models Ready
+2025-12-24 18:43:17,080 - app.main - INFO - [main:28] - 🚀 Application starting up...
+2025-12-24 18:43:17,081 - backend - INFO - [client:12] - Connecting to MongoDB at mongodb://localhost:27017/...
+2025-12-24 18:43:17,146 - backend - INFO - [client:14] - MongoDB client initialized.
+2025-12-24 18:43:17,146 - backend - INFO - [client:47] - Creating database indexes...
+2025-12-24 18:43:17,263 - backend - INFO - [client:70] - Database indexes checked/created.
+2025-12-24 18:43:17,264 - backend - WARNING - [client:71] - Remember to create a Vector Search Index named 'vector_index' on the 'all_chunks' collection in your MongoDB Atlas deployment.
+2025-12-24 18:43:17,264 - app.main - INFO - [main:32] - 🗄️ MongoDB Connected
+2025-12-24 18:43:17,265 - app.main - INFO - [main:35] - ⚙️ Initializing AI Models...
+2025-12-24 18:43:17,267 - app.llm.model_loader - INFO - [model_loader:120] - Checking API key... Found: False
+2025-12-24 18:43:17,267 - app.llm.model_loader - ERROR - [model_loader:123] - Gemini API key missing (GEMINI_API_KEY or GOOGLE_API_KEY).
+2025-12-24 18:43:17,268 - app.main - INFO - [main:37] - 🤖 AI Models Ready
+2025-12-24 18:48:06,272 - app.main - INFO - [main:28] - 🚀 Application starting up...
+2025-12-24 18:48:06,272 - backend - INFO - [client:12] - Connecting to MongoDB at mongodb://localhost:27017/...
+2025-12-24 18:48:06,308 - backend - INFO - [client:14] - MongoDB client initialized.
+2025-12-24 18:48:06,308 - backend - INFO - [client:47] - Creating database indexes...
+2025-12-24 18:48:06,412 - backend - INFO - [client:70] - Database indexes checked/created.
+2025-12-24 18:48:06,412 - backend - WARNING - [client:71] - Remember to create a Vector Search Index named 'vector_index' on the 'all_chunks' collection in your MongoDB Atlas deployment.
+2025-12-24 18:48:06,416 - app.main - INFO - [main:32] - 🗄️ MongoDB Connected
+2025-12-24 18:48:06,417 - app.main - INFO - [main:35] - ⚙️ Initializing AI Models...
+2025-12-24 18:48:06,418 - app.llm.model_loader - INFO - [model_loader:120] - Checking API key... Found: False
+2025-12-24 18:48:06,418 - app.llm.model_loader - ERROR - [model_loader:123] - Gemini API key missing (GEMINI_API_KEY or GOOGLE_API_KEY).
+2025-12-24 18:48:06,419 - app.main - INFO - [main:37] - 🤖 AI Models Ready
+2025-12-24 20:27:24,502 - app.main - INFO - [main:28] - 🚀 Application starting up...
+2025-12-24 20:27:24,503 - backend - INFO - [client:12] - Connecting to MongoDB at mongodb://localhost:27017/...
+2025-12-24 20:27:24,934 - backend - INFO - [client:14] - MongoDB client initialized.
+2025-12-24 20:27:24,935 - backend - INFO - [client:47] - Creating database indexes...
+2025-12-24 20:27:25,005 - backend - INFO - [client:70] - Database indexes checked/created.
+2025-12-24 20:27:25,006 - backend - WARNING - [client:71] - Remember to create a Vector Search Index named 'vector_index' on the 'all_chunks' collection in your MongoDB Atlas deployment.
+2025-12-24 20:27:25,006 - app.main - INFO - [main:32] - 🗄️ MongoDB Connected
+2025-12-24 20:27:25,007 - app.main - INFO - [main:35] - ⚙️ Initializing AI Models...
+2025-12-24 20:27:25,007 - app.llm.model_loader - INFO - [model_loader:120] - Checking API key... Found: False
+2025-12-24 20:27:25,007 - app.llm.model_loader - ERROR - [model_loader:123] - Gemini API key missing (GEMINI_API_KEY or GOOGLE_API_KEY).
+2025-12-24 20:27:25,007 - app.main - INFO - [main:37] - 🤖 AI Models Ready
+2025-12-25 16:20:40,961 - app.main - INFO - [main:28] - 🚀 Application starting up...
+2025-12-25 16:20:40,962 - backend - INFO - [client:12] - Connecting to MongoDB at mongodb://localhost:27017/...
+2025-12-25 16:20:42,017 - backend - INFO - [client:14] - MongoDB client initialized.
+2025-12-25 16:20:42,018 - backend - INFO - [client:47] - Creating database indexes...
+2025-12-25 16:20:42,163 - backend - INFO - [client:70] - Database indexes checked/created.
+2025-12-25 16:20:42,165 - backend - WARNING - [client:71] - Remember to create a Vector Search Index named 'vector_index' on the 'all_chunks' collection in your MongoDB Atlas deployment.
+2025-12-25 16:20:42,165 - app.main - INFO - [main:32] - 🗄️ MongoDB Connected
+2025-12-25 16:20:42,166 - app.main - INFO - [main:35] - ⚙️ Initializing AI Models...
+2025-12-25 16:20:42,166 - app.llm.model_loader - INFO - [model_loader:120] - Checking API key... Found: False
+2025-12-25 16:20:42,167 - app.llm.model_loader - ERROR - [model_loader:123] - Gemini API key missing (GEMINI_API_KEY or GOOGLE_API_KEY).
+2025-12-25 16:20:42,167 - app.main - INFO - [main:37] - 🤖 AI Models Ready
+2025-12-25 16:44:03,185 - app.main - INFO - [main:28] - 🚀 Application starting up...
+2025-12-25 16:44:03,186 - backend - INFO - [client:12] - Connecting to MongoDB at mongodb://localhost:27017/...
+2025-12-25 16:44:03,470 - backend - INFO - [client:14] - MongoDB client initialized.
+2025-12-25 16:44:03,471 - backend - INFO - [client:47] - Creating database indexes...
+2025-12-25 16:44:03,520 - backend - INFO - [client:70] - Database indexes checked/created.
+2025-12-25 16:44:03,520 - backend - WARNING - [client:71] - Remember to create a Vector Search Index named 'vector_index' on the 'all_chunks' collection in your MongoDB Atlas deployment.
+2025-12-25 16:44:03,521 - app.main - INFO - [main:32] - 🗄️ MongoDB Connected
+2025-12-25 16:44:03,521 - app.main - INFO - [main:35] - ⚙️ Initializing AI Models...
+2025-12-25 16:44:03,521 - app.llm.model_loader - INFO - [model_loader:120] - Checking API key... Found: False
+2025-12-25 16:44:03,522 - app.llm.model_loader - ERROR - [model_loader:123] - Gemini API key missing (GEMINI_API_KEY or GOOGLE_API_KEY).
+2025-12-25 16:44:03,522 - app.main - INFO - [main:37] - 🤖 AI Models Ready
+2025-12-25 16:46:09,292 - backend - INFO - [rag:109] - Retrieving context for: hi
+2025-12-25 16:52:08,615 - backend - INFO - [client:27] - MongoDB connection closed.
+2025-12-25 16:52:08,617 - app.main - INFO - [main:43] - 🔌 MongoDB Connection Closed
+2025-12-25 16:52:08,619 - app.main - INFO - [main:44] - 👋 Application shutdown complete
+2025-12-25 16:52:18,128 - app.main - INFO - [main:28] - 🚀 Application starting up...
+2025-12-25 16:52:18,128 - backend - INFO - [client:12] - Connecting to MongoDB at mongodb://localhost:27017/...
+2025-12-25 16:52:18,152 - backend - INFO - [client:14] - MongoDB client initialized.
+2025-12-25 16:52:18,153 - backend - INFO - [client:47] - Creating database indexes...
+2025-12-25 16:52:18,191 - backend - INFO - [client:70] - Database indexes checked/created.
+2025-12-25 16:52:18,191 - backend - WARNING - [client:71] - Remember to create a Vector Search Index named 'vector_index' on the 'all_chunks' collection in your MongoDB Atlas deployment.
+2025-12-25 16:52:18,191 - app.main - INFO - [main:32] - 🗄️ MongoDB Connected
+2025-12-25 16:52:18,191 - app.main - INFO - [main:35] - ⚙️ Initializing AI Models...
+2025-12-25 16:52:18,192 - app.llm.model_loader - INFO - [model_loader:120] - Checking API key... Found: False
+2025-12-25 16:52:18,192 - app.llm.model_loader - ERROR - [model_loader:123] - Gemini API key missing (GEMINI_API_KEY or GOOGLE_API_KEY).
+2025-12-25 16:52:18,192 - app.main - INFO - [main:37] - 🤖 AI Models Ready
+2025-12-25 16:52:21,149 - backend - INFO - [client:27] - MongoDB connection closed.
+2025-12-25 16:52:21,150 - app.main - INFO - [main:43] - 🔌 MongoDB Connection Closed
+2025-12-25 16:52:21,150 - app.main - INFO - [main:44] - 👋 Application shutdown complete
+2025-12-25 16:52:25,653 - app.main - INFO - [main:28] - 🚀 Application starting up...
+2025-12-25 16:52:25,653 - backend - INFO - [client:12] - Connecting to MongoDB at mongodb://localhost:27017/...
+2025-12-25 16:52:25,662 - backend - INFO - [client:14] - MongoDB client initialized.
+2025-12-25 16:52:25,662 - backend - INFO - [client:47] - Creating database indexes...
+2025-12-25 16:52:25,678 - backend - INFO - [client:70] - Database indexes checked/created.
+2025-12-25 16:52:25,678 - backend - WARNING - [client:71] - Remember to create a Vector Search Index named 'vector_index' on the 'all_chunks' collection in your MongoDB Atlas deployment.
+2025-12-25 16:52:25,678 - app.main - INFO - [main:32] - 🗄️ MongoDB Connected
+2025-12-25 16:52:25,678 - app.main - INFO - [main:35] - ⚙️ Initializing AI Models...
+2025-12-25 16:52:25,679 - app.llm.model_loader - INFO - [model_loader:120] - Checking API key... Found: False
+2025-12-25 16:52:25,679 - app.llm.model_loader - ERROR - [model_loader:123] - Gemini API key missing (GEMINI_API_KEY or GOOGLE_API_KEY).
+2025-12-25 16:52:25,679 - app.main - INFO - [main:37] - 🤖 AI Models Ready
+2025-12-25 17:02:11,965 - backend - INFO - [client:27] - MongoDB connection closed.
+2025-12-25 17:02:11,968 - app.main - INFO - [main:43] - 🔌 MongoDB Connection Closed
+2025-12-25 17:02:11,971 - app.main - INFO - [main:44] - 👋 Application shutdown complete
+2025-12-25 17:02:22,686 - app.main - INFO - [main:28] - 🚀 Application starting up...
+2025-12-25 17:02:22,690 - backend - INFO - [client:12] - Connecting to MongoDB at mongodb://localhost:27017/...
+2025-12-25 17:02:22,717 - backend - INFO - [client:14] - MongoDB client initialized.
+2025-12-25 17:02:22,719 - backend - INFO - [client:47] - Creating database indexes...
+2025-12-25 17:02:22,796 - backend - INFO - [client:70] - Database indexes checked/created.
+2025-12-25 17:02:22,798 - backend - WARNING - [client:71] - Remember to create a Vector Search Index named 'vector_index' on the 'all_chunks' collection in your MongoDB Atlas deployment.
+2025-12-25 17:02:22,799 - app.main - INFO - [main:32] - 🗄️ MongoDB Connected
+2025-12-25 17:02:22,799 - app.main - INFO - [main:35] - ⚙️ Initializing AI Models...
+2025-12-25 17:02:22,800 - app.llm.model_loader - INFO - [model_loader:120] - Checking API key... Found: False
+2025-12-25 17:02:22,800 - app.llm.model_loader - ERROR - [model_loader:123] - Gemini API key missing (GEMINI_API_KEY or GOOGLE_API_KEY).
+2025-12-25 17:02:22,800 - app.main - INFO - [main:37] - 🤖 AI Models Ready
+2025-12-25 17:02:33,988 - app.main - INFO - [main:28] - 🚀 Application starting up...
+2025-12-25 17:02:33,989 - backend - INFO - [client:12] - Connecting to MongoDB at mongodb://localhost:27017/...
+2025-12-25 17:02:34,002 - backend - INFO - [client:14] - MongoDB client initialized.
+2025-12-25 17:02:34,003 - backend - INFO - [client:47] - Creating database indexes...
+2025-12-25 17:02:34,019 - backend - INFO - [client:70] - Database indexes checked/created.
+2025-12-25 17:02:34,020 - backend - WARNING - [client:71] - Remember to create a Vector Search Index named 'vector_index' on the 'all_chunks' collection in your MongoDB Atlas deployment.
+2025-12-25 17:02:34,020 - app.main - INFO - [main:32] - 🗄️ MongoDB Connected
+2025-12-25 17:02:34,020 - app.main - INFO - [main:35] - ⚙️ Initializing AI Models...
+2025-12-25 17:02:34,021 - app.llm.model_loader - INFO - [model_loader:120] - Checking API key... Found: False
+2025-12-25 17:02:34,021 - app.llm.model_loader - ERROR - [model_loader:123] - Gemini API key missing (GEMINI_API_KEY or GOOGLE_API_KEY).
+2025-12-25 17:02:34,021 - app.main - INFO - [main:37] - 🤖 AI Models Ready
+2025-12-25 17:06:23,665 - backend - INFO - [client:27] - MongoDB connection closed.
+2025-12-25 17:06:23,668 - app.main - INFO - [main:43] - 🔌 MongoDB Connection Closed
+2025-12-25 17:06:23,669 - app.main - INFO - [main:44] - 👋 Application shutdown complete
+2025-12-25 17:06:31,692 - app.main - INFO - [main:28] - 🚀 Application starting up...
+2025-12-25 17:06:31,693 - backend - INFO - [client:12] - Connecting to MongoDB at mongodb://localhost:27017/...
+2025-12-25 17:06:31,719 - backend - INFO - [client:14] - MongoDB client initialized.
+2025-12-25 17:06:31,719 - backend - INFO - [client:47] - Creating database indexes...
+2025-12-25 17:06:31,759 - backend - INFO - [client:70] - Database indexes checked/created.
+2025-12-25 17:06:31,759 - backend - WARNING - [client:71] - Remember to create a Vector Search Index named 'vector_index' on the 'all_chunks' collection in your MongoDB Atlas deployment.
+2025-12-25 17:06:31,760 - app.main - INFO - [main:32] - 🗄️ MongoDB Connected
+2025-12-25 17:06:31,760 - app.main - INFO - [main:35] - ⚙️ Initializing AI Models...
+2025-12-25 17:06:31,760 - app.llm.model_loader - INFO - [model_loader:120] - Checking API key... Found: False
+2025-12-25 17:06:31,760 - app.llm.model_loader - ERROR - [model_loader:123] - Gemini API key missing (GEMINI_API_KEY or GOOGLE_API_KEY).
+2025-12-25 17:06:31,760 - app.main - INFO - [main:37] - 🤖 AI Models Ready
+2025-12-25 17:06:36,333 - app.main - INFO - [main:28] - 🚀 Application starting up...
+2025-12-25 17:06:36,334 - backend - INFO - [client:12] - Connecting to MongoDB at mongodb://localhost:27017/...
+2025-12-25 17:06:36,342 - backend - INFO - [client:14] - MongoDB client initialized.
+2025-12-25 17:06:36,343 - backend - INFO - [client:47] - Creating database indexes...
+2025-12-25 17:06:36,355 - backend - INFO - [client:70] - Database indexes checked/created.
+2025-12-25 17:06:36,355 - backend - WARNING - [client:71] - Remember to create a Vector Search Index named 'vector_index' on the 'all_chunks' collection in your MongoDB Atlas deployment.
+2025-12-25 17:06:36,355 - app.main - INFO - [main:32] - 🗄️ MongoDB Connected
+2025-12-25 17:06:36,356 - app.main - INFO - [main:35] - ⚙️ Initializing AI Models...
+2025-12-25 17:06:36,356 - app.llm.model_loader - INFO - [model_loader:121] - Checking API key... Found: True
+2025-12-25 17:06:36,356 - app.llm.model_loader - INFO - [model_loader:139] - Gemini 1.5 Flash chat model initialized.
+2025-12-25 17:06:38,647 - app.llm.model_loader - INFO - [model_loader:152] - Gemini embedding model initialized.
+2025-12-25 17:06:38,648 - app.llm.model_loader - INFO - [model_loader:155] - All Gemini models initialized successfully.
+2025-12-25 17:06:38,648 - app.main - INFO - [main:37] - 🤖 AI Models Ready
+2025-12-25 17:08:25,153 - backend - INFO - [rag:109] - Retrieving context for: hi
+2025-12-25 17:08:32,216 - backend - ERROR - [rag:160] - Vector search failed: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+Traceback (most recent call last):
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\services\rag.py", line 158, in retrieve_context_multi_source
+    results = await db.all_chunks.aggregate(pipeline).to_list(20)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1917, in _on_started
+    pymongo_cursor = future.result()
+  File "C:\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 3015, in aggregate
+    return self._aggregate(
+           ~~~~~~~~~~~~~~~^
+        _CollectionAggregationCommand,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 2913, in _aggregate
+    return self._database.client._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cmd.get_cursor,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        operation=_Op.AGGREGATE,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2926, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\aggregation.py", line 164, in get_cursor
+    result = conn.command(
+        self._database.name,
+    ...<9 lines>...
+        user_fields=self._user_fields,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\pool.py", line 413, in command
+    return command(
+        self,
+    ...<20 lines>...
+        write_concern=write_concern,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\network.py", line 212, in command
+    helpers_shared._check_command_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response_doc,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        parse_write_concern_error=parse_write_concern_error,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+2025-12-25 17:08:32,510 - backend - WARNING - [rag:162] - Vector search unavailable (requires MongoDB Atlas). Falling back to text search.
+2025-12-25 17:08:32,545 - backend - WARNING - [rag:190] - No text matches found. Returning recent documents.
+2025-12-25 17:08:32,728 - backend - INFO - [memory:56] - Creating new chat history for session 'ae3f0144-71b7-424e-b438-94d3b452e5fa'.
+2025-12-25 17:08:33,059 - backend - ERROR - [debugger:71] - Error invoking debugger chain: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+Traceback (most recent call last):
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\services\debugger.py", line 62, in get_chat_response
+    response = await conversation_with_history.ainvoke(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 5570, in ainvoke
+    return await self.bound.ainvoke(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 5570, in ainvoke
+    return await self.bound.ainvoke(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 3191, in ainvoke
+    input_ = await coro_with_context(part(), context, create_task=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 5570, in ainvoke
+    return await self.bound.ainvoke(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 4907, in ainvoke
+    return await self._acall_with_config(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 2109, in _acall_with_config
+    output: Output = await coro_with_context(coro, context)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 4848, in _ainvoke
+    output = await output.ainvoke(
+             ^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 5570, in ainvoke
+    return await self.bound.ainvoke(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 3191, in ainvoke
+    input_ = await coro_with_context(part(), context, create_task=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\llm\model_loader.py", line 82, in ainvoke
+    return await self._ainvoke_wrapper(input_data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\llm\model_loader.py", line 70, in _ainvoke_wrapper
+    response = await self._model.generate_content_async(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\google\generativeai\generative_models.py", line 385, in generate_content_async
+    response = await self._async_client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\async_client.py", line 440, in generate_content
+    response = await rpc(
+               ^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\google\api_core\retry\retry_unary_async.py", line 231, in retry_wrapped_func
+    return await retry_target(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\google\api_core\retry\retry_unary_async.py", line 163, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\google\api_core\retry\retry_unary_async.py", line 158, in retry_target
+    return await target()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\google\api_core\grpc_helpers_async.py", line 89, in __await__
+    raise exceptions.from_grpc_error(rpc_error) from rpc_error
+google.api_core.exceptions.NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-12-25 17:14:53,296 - backend - INFO - [client:27] - MongoDB connection closed.
+2025-12-25 17:14:53,314 - app.main - INFO - [main:43] - 🔌 MongoDB Connection Closed
+2025-12-25 17:14:53,323 - app.main - INFO - [main:44] - 👋 Application shutdown complete
+2025-12-25 17:15:09,614 - app.main - INFO - [main:28] - 🚀 Application starting up...
+2025-12-25 17:15:09,614 - backend - INFO - [client:12] - Connecting to MongoDB at mongodb://localhost:27017/...
+2025-12-25 17:15:09,639 - backend - INFO - [client:14] - MongoDB client initialized.
+2025-12-25 17:15:09,639 - backend - INFO - [client:47] - Creating database indexes...
+2025-12-25 17:15:09,715 - backend - INFO - [client:70] - Database indexes checked/created.
+2025-12-25 17:15:09,715 - backend - WARNING - [client:71] - Remember to create a Vector Search Index named 'vector_index' on the 'all_chunks' collection in your MongoDB Atlas deployment.
+2025-12-25 17:15:09,715 - app.main - INFO - [main:32] - 🗄️ MongoDB Connected
+2025-12-25 17:15:09,716 - app.main - INFO - [main:35] - ⚙️ Initializing AI Models...
+2025-12-25 17:15:09,716 - app.llm.model_loader - INFO - [model_loader:121] - Checking API key... Found: True
+2025-12-25 17:15:09,716 - app.llm.model_loader - INFO - [model_loader:139] - Gemini 1.5 Flash chat model initialized.
+2025-12-25 17:15:12,176 - app.llm.model_loader - INFO - [model_loader:152] - Gemini embedding model initialized.
+2025-12-25 17:15:12,176 - app.llm.model_loader - INFO - [model_loader:155] - All Gemini models initialized successfully.
+2025-12-25 17:15:12,176 - app.main - INFO - [main:37] - 🤖 AI Models Ready
+2025-12-25 17:15:44,176 - backend - INFO - [client:27] - MongoDB connection closed.
+2025-12-25 17:15:44,176 - app.main - INFO - [main:43] - 🔌 MongoDB Connection Closed
+2025-12-25 17:15:44,177 - app.main - INFO - [main:44] - 👋 Application shutdown complete
+2025-12-25 17:15:49,111 - app.main - INFO - [main:28] - 🚀 Application starting up...
+2025-12-25 17:15:49,111 - backend - INFO - [client:12] - Connecting to MongoDB at mongodb://localhost:27017/...
+2025-12-25 17:15:49,121 - backend - INFO - [client:14] - MongoDB client initialized.
+2025-12-25 17:15:49,121 - backend - INFO - [client:47] - Creating database indexes...
+2025-12-25 17:15:49,136 - backend - INFO - [client:70] - Database indexes checked/created.
+2025-12-25 17:15:49,136 - backend - WARNING - [client:71] - Remember to create a Vector Search Index named 'vector_index' on the 'all_chunks' collection in your MongoDB Atlas deployment.
+2025-12-25 17:15:49,136 - app.main - INFO - [main:32] - 🗄️ MongoDB Connected
+2025-12-25 17:15:49,136 - app.main - INFO - [main:35] - ⚙️ Initializing AI Models...
+2025-12-25 17:15:49,136 - app.llm.model_loader - INFO - [model_loader:121] - Checking API key... Found: True
+2025-12-25 17:15:49,137 - app.llm.model_loader - INFO - [model_loader:139] - Gemini 1.5 Flash chat model initialized.
+2025-12-25 17:15:51,289 - app.llm.model_loader - INFO - [model_loader:152] - Gemini embedding model initialized.
+2025-12-25 17:15:51,290 - app.llm.model_loader - INFO - [model_loader:155] - All Gemini models initialized successfully.
+2025-12-25 17:15:51,290 - app.main - INFO - [main:37] - 🤖 AI Models Ready
+2025-12-25 17:16:12,866 - backend - INFO - [client:27] - MongoDB connection closed.
+2025-12-25 17:16:12,867 - app.main - INFO - [main:43] - 🔌 MongoDB Connection Closed
+2025-12-25 17:16:12,867 - app.main - INFO - [main:44] - 👋 Application shutdown complete
+2025-12-25 17:16:17,412 - app.main - INFO - [main:28] - 🚀 Application starting up...
+2025-12-25 17:16:17,412 - backend - INFO - [client:12] - Connecting to MongoDB at mongodb://localhost:27017/...
+2025-12-25 17:16:17,420 - backend - INFO - [client:14] - MongoDB client initialized.
+2025-12-25 17:16:17,421 - backend - INFO - [client:47] - Creating database indexes...
+2025-12-25 17:16:17,437 - backend - INFO - [client:70] - Database indexes checked/created.
+2025-12-25 17:16:17,437 - backend - WARNING - [client:71] - Remember to create a Vector Search Index named 'vector_index' on the 'all_chunks' collection in your MongoDB Atlas deployment.
+2025-12-25 17:16:17,437 - app.main - INFO - [main:32] - 🗄️ MongoDB Connected
+2025-12-25 17:16:17,438 - app.main - INFO - [main:35] - ⚙️ Initializing AI Models...
+2025-12-25 17:16:17,438 - app.llm.model_loader - INFO - [model_loader:121] - Checking API key... Found: True
+2025-12-25 17:16:17,438 - app.llm.model_loader - INFO - [model_loader:139] - Gemini 2.5 Flash chat model initialized.
+2025-12-25 17:16:19,614 - app.llm.model_loader - INFO - [model_loader:152] - Gemini embedding model initialized.
+2025-12-25 17:16:19,615 - app.llm.model_loader - INFO - [model_loader:155] - All Gemini models initialized successfully.
+2025-12-25 17:16:19,615 - app.main - INFO - [main:37] - 🤖 AI Models Ready
+2025-12-25 17:18:23,711 - backend - INFO - [client:27] - MongoDB connection closed.
+2025-12-25 17:18:23,711 - app.main - INFO - [main:43] - 🔌 MongoDB Connection Closed
+2025-12-25 17:18:23,711 - app.main - INFO - [main:44] - 👋 Application shutdown complete
+2025-12-25 17:18:34,783 - app.main - INFO - [main:28] - 🚀 Application starting up...
+2025-12-25 17:18:34,783 - backend - INFO - [client:12] - Connecting to MongoDB at mongodb://localhost:27017/...
+2025-12-25 17:18:34,808 - backend - INFO - [client:14] - MongoDB client initialized.
+2025-12-25 17:18:34,808 - backend - INFO - [client:47] - Creating database indexes...
+2025-12-25 17:18:34,839 - backend - INFO - [client:70] - Database indexes checked/created.
+2025-12-25 17:18:34,839 - backend - WARNING - [client:71] - Remember to create a Vector Search Index named 'vector_index' on the 'all_chunks' collection in your MongoDB Atlas deployment.
+2025-12-25 17:18:34,839 - app.main - INFO - [main:32] - 🗄️ MongoDB Connected
+2025-12-25 17:18:34,840 - app.main - INFO - [main:35] - ⚙️ Initializing AI Models...
+2025-12-25 17:18:34,840 - app.llm.model_loader - INFO - [model_loader:121] - Checking API key... Found: True
+2025-12-25 17:18:34,841 - app.llm.model_loader - INFO - [model_loader:139] - Gemini 2.5 Flash chat model initialized.
+2025-12-25 17:18:37,105 - app.llm.model_loader - INFO - [model_loader:152] - Gemini embedding model initialized.
+2025-12-25 17:18:37,105 - app.llm.model_loader - INFO - [model_loader:155] - All Gemini models initialized successfully.
+2025-12-25 17:18:37,105 - app.main - INFO - [main:37] - 🤖 AI Models Ready
+2025-12-25 17:19:57,555 - backend - INFO - [rag:109] - Retrieving context for: hi
+2025-12-25 17:19:58,161 - backend - ERROR - [rag:160] - Vector search failed: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+Traceback (most recent call last):
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\services\rag.py", line 158, in retrieve_context_multi_source
+    results = await db.all_chunks.aggregate(pipeline).to_list(20)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1917, in _on_started
+    pymongo_cursor = future.result()
+  File "C:\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 3015, in aggregate
+    return self._aggregate(
+           ~~~~~~~~~~~~~~~^
+        _CollectionAggregationCommand,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 2913, in _aggregate
+    return self._database.client._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cmd.get_cursor,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        operation=_Op.AGGREGATE,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2926, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\aggregation.py", line 164, in get_cursor
+    result = conn.command(
+        self._database.name,
+    ...<9 lines>...
+        user_fields=self._user_fields,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\pool.py", line 413, in command
+    return command(
+        self,
+    ...<20 lines>...
+        write_concern=write_concern,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\network.py", line 212, in command
+    helpers_shared._check_command_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response_doc,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        parse_write_concern_error=parse_write_concern_error,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+2025-12-25 17:19:58,177 - backend - WARNING - [rag:162] - Vector search unavailable (requires MongoDB Atlas). Falling back to text search.
+2025-12-25 17:19:58,190 - backend - WARNING - [rag:190] - No text matches found. Returning recent documents.
+2025-12-25 17:19:58,219 - backend - INFO - [memory:56] - Creating new chat history for session 'ae3f0144-71b7-424e-b438-94d3b452e5fa'.
+2025-12-25 17:24:35,368 - backend - INFO - [rag:109] - Retrieving context for: hi
+2025-12-25 17:24:35,879 - backend - ERROR - [rag:160] - Vector search failed: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+Traceback (most recent call last):
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\services\rag.py", line 158, in retrieve_context_multi_source
+    results = await db.all_chunks.aggregate(pipeline).to_list(20)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1917, in _on_started
+    pymongo_cursor = future.result()
+  File "C:\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 3015, in aggregate
+    return self._aggregate(
+           ~~~~~~~~~~~~~~~^
+        _CollectionAggregationCommand,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 2913, in _aggregate
+    return self._database.client._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cmd.get_cursor,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        operation=_Op.AGGREGATE,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2926, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\aggregation.py", line 164, in get_cursor
+    result = conn.command(
+        self._database.name,
+    ...<9 lines>...
+        user_fields=self._user_fields,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\pool.py", line 413, in command
+    return command(
+        self,
+    ...<20 lines>...
+        write_concern=write_concern,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\network.py", line 212, in command
+    helpers_shared._check_command_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response_doc,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        parse_write_concern_error=parse_write_concern_error,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+2025-12-25 17:24:35,913 - backend - WARNING - [rag:162] - Vector search unavailable (requires MongoDB Atlas). Falling back to text search.
+2025-12-25 17:24:35,933 - backend - WARNING - [rag:190] - No text matches found. Returning recent documents.
+2025-12-25 17:25:05,306 - backend - INFO - [rag:109] - Retrieving context for: give me python code for adding 2 number
+2025-12-25 17:25:05,559 - backend - ERROR - [rag:160] - Vector search failed: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+Traceback (most recent call last):
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\services\rag.py", line 158, in retrieve_context_multi_source
+    results = await db.all_chunks.aggregate(pipeline).to_list(20)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1917, in _on_started
+    pymongo_cursor = future.result()
+  File "C:\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 3015, in aggregate
+    return self._aggregate(
+           ~~~~~~~~~~~~~~~^
+        _CollectionAggregationCommand,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 2913, in _aggregate
+    return self._database.client._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cmd.get_cursor,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        operation=_Op.AGGREGATE,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2926, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\aggregation.py", line 164, in get_cursor
+    result = conn.command(
+        self._database.name,
+    ...<9 lines>...
+        user_fields=self._user_fields,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\pool.py", line 413, in command
+    return command(
+        self,
+    ...<20 lines>...
+        write_concern=write_concern,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\network.py", line 212, in command
+    helpers_shared._check_command_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response_doc,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        parse_write_concern_error=parse_write_concern_error,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+2025-12-25 17:25:05,569 - backend - WARNING - [rag:162] - Vector search unavailable (requires MongoDB Atlas). Falling back to text search.
+2025-12-25 17:25:05,572 - backend - WARNING - [rag:190] - No text matches found. Returning recent documents.
+2025-12-25 17:39:03,312 - backend - INFO - [rag:109] - Retrieving context for: hi
+2025-12-25 17:39:03,763 - backend - ERROR - [rag:160] - Vector search failed: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+Traceback (most recent call last):
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\services\rag.py", line 158, in retrieve_context_multi_source
+    results = await db.all_chunks.aggregate(pipeline).to_list(20)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1917, in _on_started
+    pymongo_cursor = future.result()
+  File "C:\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 3015, in aggregate
+    return self._aggregate(
+           ~~~~~~~~~~~~~~~^
+        _CollectionAggregationCommand,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 2913, in _aggregate
+    return self._database.client._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cmd.get_cursor,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        operation=_Op.AGGREGATE,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2926, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\aggregation.py", line 164, in get_cursor
+    result = conn.command(
+        self._database.name,
+    ...<9 lines>...
+        user_fields=self._user_fields,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\pool.py", line 413, in command
+    return command(
+        self,
+    ...<20 lines>...
+        write_concern=write_concern,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\network.py", line 212, in command
+    helpers_shared._check_command_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response_doc,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        parse_write_concern_error=parse_write_concern_error,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+2025-12-25 17:39:03,784 - backend - WARNING - [rag:162] - Vector search unavailable (requires MongoDB Atlas). Falling back to text search.
+2025-12-25 17:39:03,798 - backend - WARNING - [rag:190] - No text matches found. Returning recent documents.
+2025-12-25 17:41:13,454 - backend - INFO - [client:27] - MongoDB connection closed.
+2025-12-25 17:41:13,455 - app.main - INFO - [main:43] - 🔌 MongoDB Connection Closed
+2025-12-25 17:41:13,457 - app.main - INFO - [main:44] - 👋 Application shutdown complete
+2025-12-25 17:41:25,072 - app.main - INFO - [main:28] - 🚀 Application starting up...
+2025-12-25 17:41:25,073 - backend - INFO - [client:12] - Connecting to MongoDB at mongodb://localhost:27017/...
+2025-12-25 17:41:25,092 - backend - INFO - [client:14] - MongoDB client initialized.
+2025-12-25 17:41:25,092 - backend - INFO - [client:47] - Creating database indexes...
+2025-12-25 17:41:25,128 - backend - INFO - [client:70] - Database indexes checked/created.
+2025-12-25 17:41:25,128 - backend - WARNING - [client:71] - Remember to create a Vector Search Index named 'vector_index' on the 'all_chunks' collection in your MongoDB Atlas deployment.
+2025-12-25 17:41:25,128 - app.main - INFO - [main:32] - 🗄️ MongoDB Connected
+2025-12-25 17:41:25,128 - app.main - INFO - [main:35] - ⚙️ Initializing AI Models...
+2025-12-25 17:41:25,129 - app.llm.model_loader - INFO - [model_loader:121] - Checking API key... Found: True
+2025-12-25 17:41:25,129 - app.llm.model_loader - INFO - [model_loader:139] - Gemini 2.5 Flash chat model initialized.
+2025-12-25 17:41:27,872 - app.llm.model_loader - INFO - [model_loader:152] - Gemini embedding model initialized.
+2025-12-25 17:41:27,872 - app.llm.model_loader - INFO - [model_loader:155] - All Gemini models initialized successfully.
+2025-12-25 17:41:27,873 - app.main - INFO - [main:37] - 🤖 AI Models Ready
+2025-12-25 17:42:17,233 - backend - INFO - [rag:109] - Retrieving context for: hi
+2025-12-25 17:42:17,731 - backend - ERROR - [rag:160] - Vector search failed: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+Traceback (most recent call last):
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\services\rag.py", line 158, in retrieve_context_multi_source
+    results = await db.all_chunks.aggregate(pipeline).to_list(20)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1917, in _on_started
+    pymongo_cursor = future.result()
+  File "C:\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 3015, in aggregate
+    return self._aggregate(
+           ~~~~~~~~~~~~~~~^
+        _CollectionAggregationCommand,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 2913, in _aggregate
+    return self._database.client._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cmd.get_cursor,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        operation=_Op.AGGREGATE,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2926, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\aggregation.py", line 164, in get_cursor
+    result = conn.command(
+        self._database.name,
+    ...<9 lines>...
+        user_fields=self._user_fields,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\pool.py", line 413, in command
+    return command(
+        self,
+    ...<20 lines>...
+        write_concern=write_concern,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\network.py", line 212, in command
+    helpers_shared._check_command_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response_doc,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        parse_write_concern_error=parse_write_concern_error,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+2025-12-25 17:42:17,748 - backend - WARNING - [rag:162] - Vector search unavailable (requires MongoDB Atlas). Falling back to text search.
+2025-12-25 17:42:17,758 - backend - WARNING - [rag:190] - No text matches found. Returning recent documents.
+2025-12-25 17:42:17,771 - backend - INFO - [memory:56] - Creating new chat history for session 'ae3f0144-71b7-424e-b438-94d3b452e5fa'.
+2025-12-25 17:43:01,966 - backend - INFO - [rag:109] - Retrieving context for: help me to code binary sorting in DSA
+2025-12-25 17:43:02,222 - backend - ERROR - [rag:160] - Vector search failed: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+Traceback (most recent call last):
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\services\rag.py", line 158, in retrieve_context_multi_source
+    results = await db.all_chunks.aggregate(pipeline).to_list(20)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1917, in _on_started
+    pymongo_cursor = future.result()
+  File "C:\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 3015, in aggregate
+    return self._aggregate(
+           ~~~~~~~~~~~~~~~^
+        _CollectionAggregationCommand,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 2913, in _aggregate
+    return self._database.client._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cmd.get_cursor,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        operation=_Op.AGGREGATE,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2926, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\aggregation.py", line 164, in get_cursor
+    result = conn.command(
+        self._database.name,
+    ...<9 lines>...
+        user_fields=self._user_fields,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\pool.py", line 413, in command
+    return command(
+        self,
+    ...<20 lines>...
+        write_concern=write_concern,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\network.py", line 212, in command
+    helpers_shared._check_command_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response_doc,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        parse_write_concern_error=parse_write_concern_error,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+2025-12-25 17:43:02,231 - backend - WARNING - [rag:162] - Vector search unavailable (requires MongoDB Atlas). Falling back to text search.
+2025-12-25 17:43:02,235 - backend - WARNING - [rag:190] - No text matches found. Returning recent documents.
+2025-12-25 17:43:35,829 - backend - INFO - [rag:109] - Retrieving context for: help me
+2025-12-25 17:43:36,080 - backend - ERROR - [rag:160] - Vector search failed: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+Traceback (most recent call last):
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\services\rag.py", line 158, in retrieve_context_multi_source
+    results = await db.all_chunks.aggregate(pipeline).to_list(20)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1917, in _on_started
+    pymongo_cursor = future.result()
+  File "C:\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 3015, in aggregate
+    return self._aggregate(
+           ~~~~~~~~~~~~~~~^
+        _CollectionAggregationCommand,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 2913, in _aggregate
+    return self._database.client._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cmd.get_cursor,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        operation=_Op.AGGREGATE,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2926, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\aggregation.py", line 164, in get_cursor
+    result = conn.command(
+        self._database.name,
+    ...<9 lines>...
+        user_fields=self._user_fields,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\pool.py", line 413, in command
+    return command(
+        self,
+    ...<20 lines>...
+        write_concern=write_concern,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\network.py", line 212, in command
+    helpers_shared._check_command_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response_doc,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        parse_write_concern_error=parse_write_concern_error,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+2025-12-25 17:43:36,088 - backend - WARNING - [rag:162] - Vector search unavailable (requires MongoDB Atlas). Falling back to text search.
+2025-12-25 17:43:36,090 - backend - WARNING - [rag:190] - No text matches found. Returning recent documents.
+2025-12-25 17:44:17,577 - backend - INFO - [rag:109] - Retrieving context for: Debug this file: c:\Users\91789\Downloads\AIchatbot-final\AIchatbot-final\extension\package.json
+
+Content:
+{
+  "name": "ai-debugger",
+  "displayName": "AI Dev Companion",
+  "description": "AI-powered debugging and tutoring assistant with shared conversation history",
+  "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "activationEvents": [
+    "onCommand:ai-debugger.open",
+    "onView:ai-debugger-view",
+    "onCommand:ai-debugger.openPanel",
+    "onStartupFinished"
+  ],
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Education",
+    "Debuggers"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ai-debugger.askQuestion",
+        "title": "AI Tutor: Ask Question",
+        "category": "AI Dev Companion"
+      },
+      {
+        "command": "ai-debugger.openPanel",
+        "title": "Open AI Assistant Panel",
+        "category": "AI Dev Companion"
+      },
+      {
+        "command": "ai-debugger.open",
+        "title": "Open AI Debugger Assistant",
+        "category": "AI Dev Companion"
+      }
+    ],  
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "ai-debugger",
+          "title": "AI Dev Companion",
+          "icon": "resources/Designer.png"
+        }
+      ]
+    },
+    "views": {
+      "ai-debugger": [
+        {
+          "type": "webview",
+          "id": "ai-debugger-view",
+          "name": "Chat Assistant"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "AI Dev Companion",
+      "properties": {
+        "ai-debugger.backendUrl": {
+          "type": "string",
+          "default": "http://localhost:8000",
+          "description": "URL of the AI backend service"
+        }
+      }
+    },
+    "keybindings": [
+      {
+        "command": "ai-debugger.askQuestion",
+        "key": "ctrl+shift+a",
+        "mac": "cmd+shift+a",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "dev": "code --extensionDevelopmentPath ."
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^20.14.0",
+    "@types/uuid": "^10.0.0",
+    "@types/vscode": "^1.90.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "uuid": "^10.0.0"
+  }
+}
+debug this
+2025-12-25 17:44:17,829 - backend - ERROR - [rag:160] - Vector search failed: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+Traceback (most recent call last):
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\services\rag.py", line 158, in retrieve_context_multi_source
+    results = await db.all_chunks.aggregate(pipeline).to_list(20)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1917, in _on_started
+    pymongo_cursor = future.result()
+  File "C:\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 3015, in aggregate
+    return self._aggregate(
+           ~~~~~~~~~~~~~~~^
+        _CollectionAggregationCommand,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 2913, in _aggregate
+    return self._database.client._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cmd.get_cursor,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        operation=_Op.AGGREGATE,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2926, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\aggregation.py", line 164, in get_cursor
+    result = conn.command(
+        self._database.name,
+    ...<9 lines>...
+        user_fields=self._user_fields,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\pool.py", line 413, in command
+    return command(
+        self,
+    ...<20 lines>...
+        write_concern=write_concern,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\network.py", line 212, in command
+    helpers_shared._check_command_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response_doc,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        parse_write_concern_error=parse_write_concern_error,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+2025-12-25 17:44:17,837 - backend - WARNING - [rag:162] - Vector search unavailable (requires MongoDB Atlas). Falling back to text search.
+2025-12-25 17:44:17,846 - backend - ERROR - [debugger:71] - Error invoking debugger chain: Regular expression is invalid: PCRE2 does not support \F, \L, \l, \N{name}, \U, or \u, full error: {'ok': 0.0, 'errmsg': 'Regular expression is invalid: PCRE2 does not support \\F, \\L, \\l, \\N{name}, \\U, or \\u', 'code': 51091, 'codeName': 'Location51091'}
+Traceback (most recent call last):
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\services\rag.py", line 158, in retrieve_context_multi_source
+    results = await db.all_chunks.aggregate(pipeline).to_list(20)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1917, in _on_started
+    pymongo_cursor = future.result()
+  File "C:\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 3015, in aggregate
+    return self._aggregate(
+           ~~~~~~~~~~~~~~~^
+        _CollectionAggregationCommand,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 2913, in _aggregate
+    return self._database.client._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cmd.get_cursor,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        operation=_Op.AGGREGATE,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2926, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\aggregation.py", line 164, in get_cursor
+    result = conn.command(
+        self._database.name,
+    ...<9 lines>...
+        user_fields=self._user_fields,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\pool.py", line 413, in command
+    return command(
+        self,
+    ...<20 lines>...
+        write_concern=write_concern,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\network.py", line 212, in command
+    helpers_shared._check_command_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response_doc,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        parse_write_concern_error=parse_write_concern_error,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\services\debugger.py", line 30, in get_chat_response
+    _, context_chunks = await rag.retrieve_context_multi_source(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\services\rag.py", line 178, in retrieve_context_multi_source
+    results = await cursor.to_list(20)
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "C:\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\cursor.py", line 1213, in _refresh
+    self._send_message(q)
+    ~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\cursor.py", line 1108, in _send_message
+    response = client._run_operation(
+        operation, self._unpack_response, address=self._address
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1938, in _run_operation
+    return self._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~^
+        _cmd,
+        ^^^^^
+    ...<4 lines>...
+        operation=operation.name,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2926, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1929, in _cmd
+    return server.run_operation(
+           ~~~~~~~~~~~~~~~~~~~~^
+        conn,
+        ^^^^^
+    ...<4 lines>...
+        self,
+        ^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: Regular expression is invalid: PCRE2 does not support \F, \L, \l, \N{name}, \U, or \u, full error: {'ok': 0.0, 'errmsg': 'Regular expression is invalid: PCRE2 does not support \\F, \\L, \\l, \\N{name}, \\U, or \\u', 'code': 51091, 'codeName': 'Location51091'}
+2025-12-25 17:44:37,435 - backend - INFO - [rag:109] - Retrieving context for: hi
+2025-12-25 17:44:37,678 - backend - ERROR - [rag:160] - Vector search failed: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+Traceback (most recent call last):
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\services\rag.py", line 158, in retrieve_context_multi_source
+    results = await db.all_chunks.aggregate(pipeline).to_list(20)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1917, in _on_started
+    pymongo_cursor = future.result()
+  File "C:\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 3015, in aggregate
+    return self._aggregate(
+           ~~~~~~~~~~~~~~~^
+        _CollectionAggregationCommand,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 2913, in _aggregate
+    return self._database.client._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cmd.get_cursor,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        operation=_Op.AGGREGATE,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2926, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\aggregation.py", line 164, in get_cursor
+    result = conn.command(
+        self._database.name,
+    ...<9 lines>...
+        user_fields=self._user_fields,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\pool.py", line 413, in command
+    return command(
+        self,
+    ...<20 lines>...
+        write_concern=write_concern,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\network.py", line 212, in command
+    helpers_shared._check_command_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response_doc,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        parse_write_concern_error=parse_write_concern_error,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+2025-12-25 17:44:37,686 - backend - WARNING - [rag:162] - Vector search unavailable (requires MongoDB Atlas). Falling back to text search.
+2025-12-25 17:44:37,688 - backend - WARNING - [rag:190] - No text matches found. Returning recent documents.
+2025-12-25 17:44:58,915 - backend - INFO - [rag:109] - Retrieving context for: Debug this file: c:\Users\91789\Downloads\AIchatbot-final\AIchatbot-final\extension\package.json
+
+Content:
+{
+  "name": "ai-debugger",
+  "displayName": "AI Dev Companion",
+  "description": "AI-powered debugging and tutoring assistant with shared conversation history",
+  "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "activationEvents": [
+    "onCommand:ai-debugger.open",
+    "onView:ai-debugger-view",
+    "onCommand:ai-debugger.openPanel",
+    "onStartupFinished"
+  ],
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Education",
+    "Debuggers"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ai-debugger.askQuestion",
+        "title": "AI Tutor: Ask Question",
+        "category": "AI Dev Companion"
+      },
+      {
+        "command": "ai-debugger.openPanel",
+        "title": "Open AI Assistant Panel",
+        "category": "AI Dev Companion"
+      },
+      {
+        "command": "ai-debugger.open",
+        "title": "Open AI Debugger Assistant",
+        "category": "AI Dev Companion"
+      }
+    ],  
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "ai-debugger",
+          "title": "AI Dev Companion",
+          "icon": "resources/Designer.png"
+        }
+      ]
+    },
+    "views": {
+      "ai-debugger": [
+        {
+          "type": "webview",
+          "id": "ai-debugger-view",
+          "name": "Chat Assistant"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "AI Dev Companion",
+      "properties": {
+        "ai-debugger.backendUrl": {
+          "type": "string",
+          "default": "http://localhost:8000",
+          "description": "URL of the AI backend service"
+        }
+      }
+    },
+    "keybindings": [
+      {
+        "command": "ai-debugger.askQuestion",
+        "key": "ctrl+shift+a",
+        "mac": "cmd+shift+a",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "dev": "code --extensionDevelopmentPath ."
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^20.14.0",
+    "@types/uuid": "^10.0.0",
+    "@types/vscode": "^1.90.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "uuid": "^10.0.0"
+  }
+}
+debug this
+2025-12-25 17:44:59,161 - backend - ERROR - [rag:160] - Vector search failed: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+Traceback (most recent call last):
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\services\rag.py", line 158, in retrieve_context_multi_source
+    results = await db.all_chunks.aggregate(pipeline).to_list(20)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1917, in _on_started
+    pymongo_cursor = future.result()
+  File "C:\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 3015, in aggregate
+    return self._aggregate(
+           ~~~~~~~~~~~~~~~^
+        _CollectionAggregationCommand,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 2913, in _aggregate
+    return self._database.client._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cmd.get_cursor,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        operation=_Op.AGGREGATE,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2926, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\aggregation.py", line 164, in get_cursor
+    result = conn.command(
+        self._database.name,
+    ...<9 lines>...
+        user_fields=self._user_fields,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\pool.py", line 413, in command
+    return command(
+        self,
+    ...<20 lines>...
+        write_concern=write_concern,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\network.py", line 212, in command
+    helpers_shared._check_command_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response_doc,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        parse_write_concern_error=parse_write_concern_error,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+2025-12-25 17:44:59,167 - backend - WARNING - [rag:162] - Vector search unavailable (requires MongoDB Atlas). Falling back to text search.
+2025-12-25 17:44:59,170 - backend - ERROR - [debugger:71] - Error invoking debugger chain: Regular expression is invalid: PCRE2 does not support \F, \L, \l, \N{name}, \U, or \u, full error: {'ok': 0.0, 'errmsg': 'Regular expression is invalid: PCRE2 does not support \\F, \\L, \\l, \\N{name}, \\U, or \\u', 'code': 51091, 'codeName': 'Location51091'}
+Traceback (most recent call last):
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\services\rag.py", line 158, in retrieve_context_multi_source
+    results = await db.all_chunks.aggregate(pipeline).to_list(20)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1917, in _on_started
+    pymongo_cursor = future.result()
+  File "C:\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 3015, in aggregate
+    return self._aggregate(
+           ~~~~~~~~~~~~~~~^
+        _CollectionAggregationCommand,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 2913, in _aggregate
+    return self._database.client._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cmd.get_cursor,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        operation=_Op.AGGREGATE,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2926, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\aggregation.py", line 164, in get_cursor
+    result = conn.command(
+        self._database.name,
+    ...<9 lines>...
+        user_fields=self._user_fields,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\pool.py", line 413, in command
+    return command(
+        self,
+    ...<20 lines>...
+        write_concern=write_concern,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\network.py", line 212, in command
+    helpers_shared._check_command_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response_doc,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        parse_write_concern_error=parse_write_concern_error,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\services\debugger.py", line 30, in get_chat_response
+    _, context_chunks = await rag.retrieve_context_multi_source(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\services\rag.py", line 178, in retrieve_context_multi_source
+    results = await cursor.to_list(20)
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "C:\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\cursor.py", line 1213, in _refresh
+    self._send_message(q)
+    ~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\cursor.py", line 1108, in _send_message
+    response = client._run_operation(
+        operation, self._unpack_response, address=self._address
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1938, in _run_operation
+    return self._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~^
+        _cmd,
+        ^^^^^
+    ...<4 lines>...
+        operation=operation.name,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2926, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1929, in _cmd
+    return server.run_operation(
+           ~~~~~~~~~~~~~~~~~~~~^
+        conn,
+        ^^^^^
+    ...<4 lines>...
+        self,
+        ^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\server.py", line 227, in run_operation
+    _check_command_response(first, conn.max_wire_version, pool_opts=conn.opts)  # type:ignore[has-type]
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: Regular expression is invalid: PCRE2 does not support \F, \L, \l, \N{name}, \U, or \u, full error: {'ok': 0.0, 'errmsg': 'Regular expression is invalid: PCRE2 does not support \\F, \\L, \\l, \\N{name}, \\U, or \\u', 'code': 51091, 'codeName': 'Location51091'}
+2025-12-25 17:48:22,911 - backend - INFO - [client:27] - MongoDB connection closed.
+2025-12-25 17:48:22,912 - app.main - INFO - [main:43] - 🔌 MongoDB Connection Closed
+2025-12-25 17:48:22,913 - app.main - INFO - [main:44] - 👋 Application shutdown complete
+2025-12-25 17:48:32,664 - app.main - INFO - [main:28] - 🚀 Application starting up...
+2025-12-25 17:48:32,664 - backend - INFO - [client:12] - Connecting to MongoDB at mongodb://localhost:27017/...
+2025-12-25 17:48:32,686 - backend - INFO - [client:14] - MongoDB client initialized.
+2025-12-25 17:48:32,686 - backend - INFO - [client:47] - Creating database indexes...
+2025-12-25 17:48:32,716 - backend - INFO - [client:70] - Database indexes checked/created.
+2025-12-25 17:48:32,716 - backend - WARNING - [client:71] - Remember to create a Vector Search Index named 'vector_index' on the 'all_chunks' collection in your MongoDB Atlas deployment.
+2025-12-25 17:48:32,717 - app.main - INFO - [main:32] - 🗄️ MongoDB Connected
+2025-12-25 17:48:32,717 - app.main - INFO - [main:35] - ⚙️ Initializing AI Models...
+2025-12-25 17:48:32,717 - app.llm.model_loader - INFO - [model_loader:121] - Checking API key... Found: True
+2025-12-25 17:48:32,717 - app.llm.model_loader - INFO - [model_loader:139] - Gemini 2.5 Flash chat model initialized.
+2025-12-25 17:48:35,313 - app.llm.model_loader - INFO - [model_loader:152] - Gemini embedding model initialized.
+2025-12-25 17:48:35,313 - app.llm.model_loader - INFO - [model_loader:155] - All Gemini models initialized successfully.
+2025-12-25 17:48:35,313 - app.main - INFO - [main:37] - 🤖 AI Models Ready
+2025-12-25 17:48:40,197 - app.main - INFO - [main:28] - 🚀 Application starting up...
+2025-12-25 17:48:40,197 - backend - INFO - [client:12] - Connecting to MongoDB at mongodb://localhost:27017/...
+2025-12-25 17:48:40,209 - backend - INFO - [client:14] - MongoDB client initialized.
+2025-12-25 17:48:40,209 - backend - INFO - [client:47] - Creating database indexes...
+2025-12-25 17:48:40,223 - backend - INFO - [client:70] - Database indexes checked/created.
+2025-12-25 17:48:40,223 - backend - WARNING - [client:71] - Remember to create a Vector Search Index named 'vector_index' on the 'all_chunks' collection in your MongoDB Atlas deployment.
+2025-12-25 17:48:40,223 - app.main - INFO - [main:32] - 🗄️ MongoDB Connected
+2025-12-25 17:48:40,224 - app.main - INFO - [main:35] - ⚙️ Initializing AI Models...
+2025-12-25 17:48:40,224 - app.llm.model_loader - INFO - [model_loader:121] - Checking API key... Found: True
+2025-12-25 17:48:40,224 - app.llm.model_loader - INFO - [model_loader:139] - Gemini 2.5 Flash chat model initialized.
+2025-12-25 17:48:42,526 - app.llm.model_loader - INFO - [model_loader:152] - Gemini embedding model initialized.
+2025-12-25 17:48:42,527 - app.llm.model_loader - INFO - [model_loader:155] - All Gemini models initialized successfully.
+2025-12-25 17:48:42,528 - app.main - INFO - [main:37] - 🤖 AI Models Ready
+2025-12-25 17:49:38,153 - backend - INFO - [rag:110] - Retrieving context for: hi
+2025-12-25 17:49:38,717 - backend - ERROR - [rag:161] - Vector search failed: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+Traceback (most recent call last):
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\services\rag.py", line 159, in retrieve_context_multi_source
+    results = await db.all_chunks.aggregate(pipeline).to_list(20)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1917, in _on_started
+    pymongo_cursor = future.result()
+  File "C:\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 3015, in aggregate
+    return self._aggregate(
+           ~~~~~~~~~~~~~~~^
+        _CollectionAggregationCommand,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 2913, in _aggregate
+    return self._database.client._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cmd.get_cursor,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        operation=_Op.AGGREGATE,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2926, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\aggregation.py", line 164, in get_cursor
+    result = conn.command(
+        self._database.name,
+    ...<9 lines>...
+        user_fields=self._user_fields,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\pool.py", line 413, in command
+    return command(
+        self,
+    ...<20 lines>...
+        write_concern=write_concern,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\network.py", line 212, in command
+    helpers_shared._check_command_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response_doc,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        parse_write_concern_error=parse_write_concern_error,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+2025-12-25 17:49:38,734 - backend - WARNING - [rag:163] - Vector search unavailable (requires MongoDB Atlas). Falling back to text search.
+2025-12-25 17:49:38,750 - backend - WARNING - [rag:193] - No text matches found. Returning recent documents.
+2025-12-25 17:49:38,765 - backend - INFO - [memory:56] - Creating new chat history for session 'ae3f0144-71b7-424e-b438-94d3b452e5fa'.
+2025-12-25 17:49:55,792 - backend - INFO - [rag:110] - Retrieving context for: Debug this file: c:\Users\91789\Downloads\AIchatbot-final\AIchatbot-final\extension\package.json
+
+Content:
+{
+  "name": "ai-debugger",
+  "displayName": "AI Dev Companion",
+  "description": "AI-powered debugging and tutoring assistant with shared conversation history",
+  "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "activationEvents": [
+    "onCommand:ai-debugger.open",
+    "onView:ai-debugger-view",
+    "onCommand:ai-debugger.openPanel",
+    "onStartupFinished"
+  ],
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Education",
+    "Debuggers"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ai-debugger.askQuestion",
+        "title": "AI Tutor: Ask Question",
+        "category": "AI Dev Companion"
+      },
+      {
+        "command": "ai-debugger.openPanel",
+        "title": "Open AI Assistant Panel",
+        "category": "AI Dev Companion"
+      },
+      {
+        "command": "ai-debugger.open",
+        "title": "Open AI Debugger Assistant",
+        "category": "AI Dev Companion"
+      }
+    ],  
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "ai-debugger",
+          "title": "AI Dev Companion",
+          "icon": "resources/Designer.png"
+        }
+      ]
+    },
+    "views": {
+      "ai-debugger": [
+        {
+          "type": "webview",
+          "id": "ai-debugger-view",
+          "name": "Chat Assistant"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "AI Dev Companion",
+      "properties": {
+        "ai-debugger.backendUrl": {
+          "type": "string",
+          "default": "http://localhost:8000",
+          "description": "URL of the AI backend service"
+        }
+      }
+    },
+    "keybindings": [
+      {
+        "command": "ai-debugger.askQuestion",
+        "key": "ctrl+shift+a",
+        "mac": "cmd+shift+a",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "dev": "code --extensionDevelopmentPath ."
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^20.14.0",
+    "@types/uuid": "^10.0.0",
+    "@types/vscode": "^1.90.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "uuid": "^10.0.0"
+  }
+}
+fix the error
+2025-12-25 17:49:56,040 - backend - ERROR - [rag:161] - Vector search failed: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+Traceback (most recent call last):
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\services\rag.py", line 159, in retrieve_context_multi_source
+    results = await db.all_chunks.aggregate(pipeline).to_list(20)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1917, in _on_started
+    pymongo_cursor = future.result()
+  File "C:\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 3015, in aggregate
+    return self._aggregate(
+           ~~~~~~~~~~~~~~~^
+        _CollectionAggregationCommand,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 2913, in _aggregate
+    return self._database.client._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cmd.get_cursor,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        operation=_Op.AGGREGATE,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2926, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\aggregation.py", line 164, in get_cursor
+    result = conn.command(
+        self._database.name,
+    ...<9 lines>...
+        user_fields=self._user_fields,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\pool.py", line 413, in command
+    return command(
+        self,
+    ...<20 lines>...
+        write_concern=write_concern,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\network.py", line 212, in command
+    helpers_shared._check_command_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response_doc,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        parse_write_concern_error=parse_write_concern_error,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+2025-12-25 17:49:56,047 - backend - WARNING - [rag:163] - Vector search unavailable (requires MongoDB Atlas). Falling back to text search.
+2025-12-25 17:49:56,052 - backend - WARNING - [rag:193] - No text matches found. Returning recent documents.
+2025-12-25 19:06:32,999 - backend - INFO - [rag:110] - Retrieving context for: hi
+2025-12-25 19:06:33,869 - backend - ERROR - [rag:161] - Vector search failed: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+Traceback (most recent call last):
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\services\rag.py", line 159, in retrieve_context_multi_source
+    results = await db.all_chunks.aggregate(pipeline).to_list(20)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1917, in _on_started
+    pymongo_cursor = future.result()
+  File "C:\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 3015, in aggregate
+    return self._aggregate(
+           ~~~~~~~~~~~~~~~^
+        _CollectionAggregationCommand,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 2913, in _aggregate
+    return self._database.client._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cmd.get_cursor,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        operation=_Op.AGGREGATE,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2926, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\aggregation.py", line 164, in get_cursor
+    result = conn.command(
+        self._database.name,
+    ...<9 lines>...
+        user_fields=self._user_fields,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\pool.py", line 413, in command
+    return command(
+        self,
+    ...<20 lines>...
+        write_concern=write_concern,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\network.py", line 212, in command
+    helpers_shared._check_command_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response_doc,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        parse_write_concern_error=parse_write_concern_error,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+2025-12-25 19:06:33,956 - backend - WARNING - [rag:163] - Vector search unavailable (requires MongoDB Atlas). Falling back to text search.
+2025-12-25 19:06:34,001 - backend - WARNING - [rag:193] - No text matches found. Returning recent documents.
+2025-12-25 19:07:11,650 - backend - INFO - [rag:110] - Retrieving context for: Debug this file: c:\Users\91789\Downloads\AIchatbot-final\AIchatbot-final\extension\package.json
+
+Content:
+{
+  "name": "ai-debugger",
+  "displayName": "AI Dev Companion",
+  "description": "AI-powered debugging and tutoring assistant with shared conversation history",
+  "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "activationEvents": [
+    "onCommand:ai-debugger.open",
+    "onView:ai-debugger-view",
+    "onCommand:ai-debugger.openPanel",
+    "onStartupFinished"
+  ],
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Education",
+    "Debuggers"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ai-debugger.askQuestion",
+        "title": "AI Tutor: Ask Question",
+        "category": "AI Dev Companion"
+      },
+      {
+        "command": "ai-debugger.openPanel",
+        "title": "Open AI Assistant Panel",
+        "category": "AI Dev Companion"
+      },
+      {
+        "command": "ai-debugger.open",
+        "title": "Open AI Debugger Assistant",
+        "category": "AI Dev Companion"
+      }
+    ],  
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "ai-debugger",
+          "title": "AI Dev Companion",
+          "icon": "resources/Designer.png"
+        }
+      ]
+    },
+    "views": {
+      "ai-debugger": [
+        {
+          "type": "webview",
+          "id": "ai-debugger-view",
+          "name": "Chat Assistant"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "AI Dev Companion",
+      "properties": {
+        "ai-debugger.backendUrl": {
+          "type": "string",
+          "default": "http://localhost:8000",
+          "description": "URL of the AI backend service"
+        }
+      }
+    },
+    "keybindings": [
+      {
+        "command": "ai-debugger.askQuestion",
+        "key": "ctrl+shift+a",
+        "mac": "cmd+shift+a",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "dev": "code --extensionDevelopmentPath ."
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^20.14.0",
+    "@types/uuid": "^10.0.0",
+    "@types/vscode": "^1.90.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "uuid": "^10.0.0"
+  }
+}
+fix the error
+2025-12-25 19:07:11,946 - backend - ERROR - [rag:161] - Vector search failed: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+Traceback (most recent call last):
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\services\rag.py", line 159, in retrieve_context_multi_source
+    results = await db.all_chunks.aggregate(pipeline).to_list(20)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1917, in _on_started
+    pymongo_cursor = future.result()
+  File "C:\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 3015, in aggregate
+    return self._aggregate(
+           ~~~~~~~~~~~~~~~^
+        _CollectionAggregationCommand,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 2913, in _aggregate
+    return self._database.client._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cmd.get_cursor,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        operation=_Op.AGGREGATE,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2926, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\aggregation.py", line 164, in get_cursor
+    result = conn.command(
+        self._database.name,
+    ...<9 lines>...
+        user_fields=self._user_fields,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\pool.py", line 413, in command
+    return command(
+        self,
+    ...<20 lines>...
+        write_concern=write_concern,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\network.py", line 212, in command
+    helpers_shared._check_command_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response_doc,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        parse_write_concern_error=parse_write_concern_error,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+2025-12-25 19:07:11,963 - backend - WARNING - [rag:163] - Vector search unavailable (requires MongoDB Atlas). Falling back to text search.
+2025-12-25 19:07:11,975 - backend - WARNING - [rag:193] - No text matches found. Returning recent documents.
+2025-12-25 19:09:36,047 - backend - INFO - [rag:110] - Retrieving context for: hi
+2025-12-25 19:09:36,429 - backend - ERROR - [rag:161] - Vector search failed: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+Traceback (most recent call last):
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\services\rag.py", line 159, in retrieve_context_multi_source
+    results = await db.all_chunks.aggregate(pipeline).to_list(20)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1917, in _on_started
+    pymongo_cursor = future.result()
+  File "C:\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 3015, in aggregate
+    return self._aggregate(
+           ~~~~~~~~~~~~~~~^
+        _CollectionAggregationCommand,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 2913, in _aggregate
+    return self._database.client._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cmd.get_cursor,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        operation=_Op.AGGREGATE,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2926, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\aggregation.py", line 164, in get_cursor
+    result = conn.command(
+        self._database.name,
+    ...<9 lines>...
+        user_fields=self._user_fields,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\pool.py", line 413, in command
+    return command(
+        self,
+    ...<20 lines>...
+        write_concern=write_concern,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\network.py", line 212, in command
+    helpers_shared._check_command_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response_doc,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        parse_write_concern_error=parse_write_concern_error,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+2025-12-25 19:09:36,462 - backend - WARNING - [rag:163] - Vector search unavailable (requires MongoDB Atlas). Falling back to text search.
+2025-12-25 19:09:36,479 - backend - WARNING - [rag:193] - No text matches found. Returning recent documents.
+2025-12-25 19:09:36,539 - backend - INFO - [memory:56] - Creating new chat history for session '86469b7d-6994-4d26-8503-9eb45139866e'.
+2025-12-25 19:11:38,362 - backend - INFO - [rag:33] - [85c9fe61-cc96-4337-9263-6ee82fcd37b5] Starting ingestion for: __init__.py
+2025-12-25 19:11:38,365 - backend - INFO - [document_processor:11] - Processing file: __init__.py
+2025-12-25 19:14:28,045 - backend - INFO - [rag:110] - Retrieving context for: Explain the selected code
+2025-12-25 19:14:28,701 - backend - ERROR - [rag:161] - Vector search failed: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+Traceback (most recent call last):
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\AIchatbot-santhosh_copy2\backend\app\services\rag.py", line 159, in retrieve_context_multi_source
+    results = await db.all_chunks.aggregate(pipeline).to_list(20)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\motor\core.py", line 1917, in _on_started
+    pymongo_cursor = future.result()
+  File "C:\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 3015, in aggregate
+    return self._aggregate(
+           ~~~~~~~~~~~~~~~^
+        _CollectionAggregationCommand,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 2913, in _aggregate
+    return self._database.client._retryable_read(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        cmd.get_cursor,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        operation=_Op.AGGREGATE,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ~~~~~~~~~~~~~~~~~~~~^
+        func,
+        ^^^^^
+    ...<7 lines>...
+        operation_id=operation_id,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ~~~~~~~~~~^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2926, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\aggregation.py", line 164, in get_cursor
+    result = conn.command(
+        self._database.name,
+    ...<9 lines>...
+        user_fields=self._user_fields,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\pool.py", line 413, in command
+    return command(
+        self,
+    ...<20 lines>...
+        write_concern=write_concern,
+    )
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\synchronous\network.py", line 212, in command
+    helpers_shared._check_command_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response_doc,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        parse_write_concern_error=parse_write_concern_error,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\91789\Downloads\AIchatbot-santhosh_copy2\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 284, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs., full error: {'ok': 0.0, 'errmsg': 'Using $search and $vectorSearch aggregation stages requires additional configuration. Please connect to Atlas or an AtlasCLI local deployment to enable.For more information on how to connect, see https://dochub.mongodb.org/core/atlas-cli-deploy-local-reqs.', 'code': 31082, 'codeName': 'SearchNotEnabled'}
+2025-12-25 19:14:28,752 - backend - WARNING - [rag:163] - Vector search unavailable (requires MongoDB Atlas). Falling back to text search.
+2025-12-25 19:14:28,802 - backend - WARNING - [rag:193] - No text matches found. Returning recent documents.
+2025-12-25 19:28:55,902 - backend - INFO - [client:27] - MongoDB connection closed.
+2025-12-25 19:28:55,986 - app.main - INFO - [main:43] - 🔌 MongoDB Connection Closed
+2025-12-25 19:28:56,002 - app.main - INFO - [main:44] - 👋 Application shutdown complete
