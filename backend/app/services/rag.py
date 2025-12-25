@@ -8,6 +8,7 @@ from typing import List, Dict, Optional, Any, Tuple
 
 import google.generativeai as genai
 import anyio
+import re
 
 
 EMBED_MODEL = "models/text-embedding-004"
@@ -162,7 +163,9 @@ async def retrieve_context_multi_source(
         logger.warning("Vector search unavailable (requires MongoDB Atlas). Falling back to text search.")
         
         # Build fallback query using text matching
-        fallback_filter = {"content": {"$regex": query, "$options": "i"}}
+        # Escape regex special characters to prevent regex errors
+        escaped_query = re.escape(query)
+        fallback_filter = {"content": {"$regex": escaped_query, "$options": "i"}}
         
         if session_id:
             fallback_filter["$or"] = [

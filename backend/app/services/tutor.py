@@ -53,8 +53,28 @@ async def get_tutor_response(session_id: str, question: str, use_rag: bool = Tru
         prompt = prompt.format(context=context_str, error_context=json.dumps(error_context), question=question)
     else:
         prompt = prompt.format(context=context_str, question=question)
-        
-    return await _call_llm(prompt)
+    
+    llm_result = await _call_llm(prompt)
+    
+    # Format response to match the expected ChatResponse interface
+    # The extension expects a "response" field
+    explanation = llm_result.get("explanation", "No explanation provided.")
+    steps = llm_result.get("stepsToFix", [])
+    resources = llm_result.get("resources", [])
+    
+    # Build a formatted response string
+    formatted_response = explanation
+    if steps:
+        formatted_response += "\n\n📝 Steps to Fix:\n" + "\n".join(f"{i+1}. {step}" for i, step in enumerate(steps))
+    if resources:
+        formatted_response += "\n\n🔗 Resources:\n" + "\n".join(f"• {res}" for res in resources)
+    
+    return {
+        "response": formatted_response,
+        "explanation": explanation,
+        "steps": steps,
+        "resources": resources
+    }
 
 async def _call_llm(prompt: str) -> dict:
     """Calls the Gemini model and parses the JSON response."""
@@ -67,21 +87,23 @@ async def _call_llm(prompt: str) -> dict:
         # Use the async wrapper's ainvoke method
         response = await client.ainvoke(prompt)
         
-        # The response from genai is in the `text` attribute
+        # The response from LangChain has a `content` attribute
         # The model is instructed to return JSON, so we parse it.
         # Added cleanup to handle markdown code blocks in the response
-        response_text = response.text.strip().replace("```json", "").replace("```", "").strip()
+        response_text = getattr(response, "content", str(response))
+        response_text = response_text.strip().replace("```json", "").replace("```", "").strip()
         
         return json.loads(response_text)
 
     except json.JSONDecodeError as e:
         logger.error(f"Failed to parse JSON from Gemini response: {e}")
-        logger.error(f"Raw response was: {response.text}")
+        response_text = getattr(response, "content", str(response))
+        logger.error(f"Raw response was: {response_text}")
         # Return a structured error to the client
         return {
             "error": "Failed to parse AI response",
             "details": "The AI model returned a malformed JSON object.",
-            "raw_response": response.text
+            "raw_response": response_text
         }
     except Exception as e:
         logger.error(f"Error calling Gemini AI: {e}", exc_info=True)

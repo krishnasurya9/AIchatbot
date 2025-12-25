@@ -5,6 +5,7 @@
   "version": "0.0.1",
   "publisher": "your-publisher-name",
   "activationEvents": [
+    "onCommand:ai-debugger.open",
     "onView:ai-debugger-view",
     "onCommand:ai-debugger.openPanel",
     "onStartupFinished"
@@ -29,8 +30,13 @@
         "command": "ai-debugger.openPanel",
         "title": "Open AI Assistant Panel",
         "category": "AI Dev Companion"
+      },
+      {
+        "command": "ai-debugger.open",
+        "title": "Open AI Debugger Assistant",
+        "category": "AI Dev Companion"
       }
-    ],
+    ],  
     "viewsContainers": {
       "activitybar": [
         {
@@ -48,6 +54,16 @@
           "name": "Chat Assistant"
         }
       ]
+    },
+    "configuration": {
+      "title": "AI Dev Companion",
+      "properties": {
+        "ai-debugger.backendUrl": {
+          "type": "string",
+          "default": "http://localhost:8000",
+          "description": "URL of the AI backend service"
+        }
+      }
     },
     "keybindings": [
       {
