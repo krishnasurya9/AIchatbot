@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+AIchatbot-santhosh_copy2/extension/node_modules/
+AIchatbot-santhosh_copy2/extension/out/
+AIchatbot-santhosh_copy2/extension/dist/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+AIchatbot-santhosh_copy2/backend/__pycache__/
+AIchatbot-santhosh_copy2/backend/.venv/
+
+# Secrets
+.env
+AIchatbot-santhosh_copy2/backend/.env
+
+# Logs
+*.log
+app.log
+
+# VS Code
+.vscode/
