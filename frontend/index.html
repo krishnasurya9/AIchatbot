@@ -3,371 +3,410 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Dev Companion Hub</title>
+    <title>DevHub | AI Assistant</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Glassmorphism & Dark Mode Styles */
-        .glass {
-            background: rgba(17, 24, 39, 0.7);
-            backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-    </style>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gradient-to-br from-gray-900 via-purple-900 to-black min-h-screen text-gray-100">
+<body class="h-screen flex flex-col bg-black text-zinc-200 selection:bg-white/20 selection:text-white">
     
     <!-- Header -->
-    <header class="glass border-b border-purple-500/30 p-4 mb-6">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                🤖 AI Dev Companion Hub
-            </h1>
-            <div class="flex gap-4">
-                <button class="glass px-4 py-2 rounded-lg hover:bg-purple-600/30 transition">
-                    🧠 Brain Zone
-                </button>
-                <button class="glass px-4 py-2 rounded-lg hover:bg-purple-600/30 transition">
-                    📊 Analytics
+    <header class="h-24 flex items-center justify-between px-10 shrink-0 z-40 relative">
+        <div class="flex items-center gap-8">
+            <!-- Toggle Left Sidebar -->
+            <button onclick="toggleSidebar('leftSidebar')" class="text-zinc-500 hover:text-white p-4 rounded-full hover:bg-white/5 transition border border-transparent hover:border-white/5 group">
+                <i class="ph ph-list text-xl group-hover:scale-110 transition-transform"></i>
+            </button>
+            
+            <div class="flex items-center gap-4 group cursor-default">
+                <div class="w-12 h-12 bg-black rounded-2xl flex items-center justify-center border border-white/10 shadow-[0_0_30px_-10px_rgba(255,255,255,0.1)] group-hover:shadow-[0_0_40px_-5px_rgba(255,255,255,0.2)] transition duration-500">
+                    <i class="ph ph-asterisk-simple text-white text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="font-bold text-xl tracking-tight text-white leading-none mb-1">DevHub</h1>
+                    <div class="flex items-center gap-2">
+                        <div class="w-1.5 h-1.5 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div>
+                        <span class="text-[10px] font-mono text-zinc-600 uppercase tracking-widest">Connected</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Session ID Input -->
+        <div class="flex-1 max-w-lg mx-10 hidden md:block">
+            <div class="relative group">
+                <div class="absolute inset-y-0 left-0 pl-5 flex items-center pointer-events-none">
+                    <i class="ph ph-hash text-zinc-700 group-focus-within:text-zinc-400 transition"></i>
+                </div>
+                <input 
+                    type="text" 
+                    id="sessionIdInput" 
+                    placeholder="SESSION ID" 
+                    class="glass-input w-full text-zinc-400 text-xs rounded-full py-3.5 pl-12 pr-24 focus:outline-none font-mono tracking-wider uppercase"
+                >
+                <button onclick="updateSessionId()" class="absolute right-2 top-2 bottom-2 px-4 bg-zinc-900 hover:bg-zinc-800 text-[10px] text-zinc-400 rounded-full transition uppercase font-bold tracking-widest border border-zinc-800 hover:text-white">
+                    Load
                 </button>
             </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <!-- Toggle Right Sidebar -->
+            <button onclick="toggleSidebar('rightSidebar')" class="text-zinc-500 hover:text-white p-4 rounded-full hover:bg-white/5 transition border border-transparent hover:border-white/5 flex items-center gap-3 group">
+                <span class="text-[10px] font-bold tracking-widest uppercase hidden sm:block font-mono text-zinc-600 group-hover:text-zinc-300 transition">Context</span>
+                <i class="ph ph-sidebar-simple text-xl group-hover:scale-110 transition-transform"></i>
+            </button>
         </div>
     </header>
 
-    <!-- Main Container -->
-    <div class="container mx-auto px-4">
-        <div class="grid grid-cols-12 gap-6">
+    <!-- Main Layout Container -->
+    <div class="flex-1 flex overflow-hidden relative px-6 pb-6">
+        
+        <!-- Left Sidebar (Menu) -->
+        <aside id="leftSidebar" class="sidebar flex flex-col">
+            <div class="p-8 border-b border-white/5 flex justify-between items-center">
+                <h3 class="text-[10px] font-bold text-zinc-600 uppercase tracking-[0.2em] font-mono">Navigation</h3>
+                <button onclick="toggleSidebar('leftSidebar')" class="text-zinc-600 hover:text-white transition"><i class="ph ph-x text-lg"></i></button>
+            </div>
             
-            <!-- Left Sidebar - AI Brain Zone -->
-            <div class="col-span-3">
-                <div class="glass rounded-xl p-6 h-[calc(100vh-200px)] overflow-y-auto">
-                    <h2 class="text-xl font-bold mb-4 text-purple-300">🧠 AI Brain Zone</h2>
-                    <div class="space-y-3">
-                        <div class="bg-purple-900/30 p-3 rounded-lg border border-purple-500/30">
-                            <div class="text-sm text-purple-300">Task Optimization</div>
-                            <div class="text-xs text-gray-400 mt-1">Processing...</div>
+            <nav class="flex-1 p-4 space-y-3 overflow-y-auto">
+                <button onclick="clearHistory()" class="w-full flex items-center gap-4 px-5 py-4 rounded-2xl text-xs text-zinc-400 hover:text-white hover:bg-white/5 transition text-left group border border-transparent hover:border-white/5">
+                    <i class="ph ph-trash text-lg text-zinc-600 group-hover:text-red-400 transition"></i>
+                    <span class="font-mono tracking-wide">CLEAR_HISTORY</span>
+                </button>
+                
+                <div class="mt-8 px-5">
+                    <h4 class="text-[10px] font-bold text-zinc-700 uppercase tracking-[0.2em] mb-4 font-mono">Recent</h4>
+                    <div class="space-y-2">
+                        <div class="px-4 py-3 rounded-xl bg-white/5 border border-white/5 text-[10px] text-zinc-300 truncate font-mono cursor-pointer hover:border-white/20 transition flex items-center gap-3">
+                            <div class="w-1.5 h-1.5 rounded-full bg-zinc-600"></div>
+                            # debug-login-flow
                         </div>
-                        <div class="bg-blue-900/30 p-3 rounded-lg border border-blue-500/30">
-                            <div class="text-sm text-blue-300">Code Analysis</div>
-                            <div class="text-xs text-gray-400 mt-1">Running</div>
-                        </div>
-                        <div class="bg-green-900/30 p-3 rounded-lg border border-green-500/30">
-                            <div class="text-sm text-green-300">Pattern Detection</div>
-                            <div class="text-xs text-gray-400 mt-1">Complete</div>
+                        <div class="px-4 py-3 rounded-xl border border-transparent hover:border-white/5 text-[10px] text-zinc-600 truncate font-mono cursor-pointer transition hover:text-zinc-400 flex items-center gap-3">
+                            <div class="w-1.5 h-1.5 rounded-full bg-zinc-800"></div>
+                            # api-refactor-v2
                         </div>
                     </div>
                 </div>
+            </nav>
+
+            <div class="p-8 border-t border-white/5">
+                <div class="flex items-center justify-between">
+                    <span class="text-[10px] text-zinc-700 font-mono tracking-widest">V 2.0.0</span>
+                    <div class="w-2 h-2 rounded-full bg-zinc-800 shadow-[0_0_10px_rgba(255,255,255,0.05)]"></div>
+                </div>
             </div>
+        </aside>
 
-            <!-- Center - Hybrid Chat + Editor -->
-            <div class="col-span-6">
-                <div class="glass rounded-xl h-[calc(100vh-200px)] flex flex-col">
-                    <!-- Mode & Controls -->
-                    <div class="flex border-b border-purple-500/30 p-2 items-center gap-2">
-                        <button class="py-2 px-4 rounded-lg bg-purple-600/50 text-white font-semibold">💬 Chat</button>
-                        <button class="py-2 px-4 rounded-lg hover:bg-purple-600/30 transition">📝 Editor</button>
-                        <select id="modeSelector" class="ml-auto bg-gray-800/50 border border-purple-500/30 rounded-lg px-2 py-2 text-sm">
-                            <option value="fast">⚡ Fast Mode</option>
-                            <option value="deep">🧠 Deep Tutor</option>
-                        </select>
-                        <button id="clearSessionBtn" class="bg-red-600/50 px-3 py-2 rounded-lg hover:bg-red-600/70 transition" title="Clear Session">Clear Session</button>
-                    </div>
-
-                    <!-- Chat Area -->
-                    <div id="chatBox" class="flex-1 overflow-y-auto p-6 space-y-4">
-                        <!-- Messages will appear here -->
-                        <div class="text-center text-gray-400 mt-10">
-                            <p class="text-lg">👋 Welcome to AI Dev Companion</p>
-                            <p class="text-sm mt-2">Start chatting or select code in VS Code</p>
+        <!-- Center Chat Area -->
+        <main class="flex-1 flex flex-col relative w-full z-0 rounded-[40px] border border-white/5 bg-black overflow-hidden shadow-2xl">
+            
+            <!-- Chat Messages -->
+            <div id="chatBox" class="flex-1 overflow-y-auto p-8 sm:p-12 space-y-10 scroll-smooth">
+                <div id="welcomeState" class="h-full flex flex-col items-center justify-center text-center opacity-100 select-none">
+                    <div class="relative mb-10 group">
+                        <!-- The "Black Light" Glow behind the icon -->
+                        <div class="absolute -inset-10 bg-gradient-to-r from-violet-500/10 to-blue-500/10 rounded-full blur-3xl opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+                        
+                        <div class="w-32 h-32 bg-black rounded-[2.5rem] flex items-center justify-center border border-white/5 shadow-[0_0_50px_-10px_rgba(0,0,0,1)] relative z-10">
+                            <i class="ph ph-terminal-window text-5xl text-zinc-700 group-hover:text-zinc-200 transition duration-500"></i>
                         </div>
                     </div>
+                    <h2 class="text-3xl font-bold text-white mb-3 tracking-tight">DevHub <span class="text-zinc-600">OS</span></h2>
+                    <p class="text-xs text-zinc-600 font-mono tracking-[0.2em] uppercase">System Ready</p>
+                </div>
+            </div>
 
-                    <div id="typingIndicator" class="p-2 text-xs text-gray-400 hidden">AI is typing…</div>
+            <!-- Input Area -->
+            <div class="p-8 z-20 bg-gradient-to-t from-black via-black to-transparent">
+                <div class="max-w-4xl mx-auto relative">
+                    <!-- Typing Indicator -->
+                    <div id="typingIndicator" class="absolute -top-16 left-0 flex items-center gap-3 hidden">
+                         <div class="flex gap-1">
+                            <div class="w-1 h-1 bg-white rounded-full animate-bounce"></div>
+                            <div class="w-1 h-1 bg-white rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
+                            <div class="w-1 h-1 bg-white rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                         </div>
+                         <span class="text-[10px] font-mono text-zinc-600 uppercase tracking-widest">Computing</span>
+                    </div>
 
-                    <!-- Input Area -->
-                    <div class="p-4 border-t border-purple-500/30">
-                        <div class="flex gap-2">
+                    <div class="flex gap-4 items-end">
+                        <div class="flex-1 relative group">
+                            <div class="absolute -inset-0.5 bg-gradient-to-r from-white/10 to-white/5 rounded-[20px] blur opacity-0 group-focus-within:opacity-100 transition duration-500"></div>
                             <input 
                                 id="commandInput"
                                 type="text" 
-                                placeholder="Type your message or command..." 
-                                class="flex-1 bg-gray-800/50 border border-purple-500/30 rounded-lg px-4 py-3 focus:outline-none focus:border-purple-500 text-white placeholder-gray-500"
+                                placeholder="Input command..." 
+                                class="glass-input relative w-full text-white text-sm rounded-[18px] px-8 py-5 focus:outline-none placeholder-zinc-700 font-medium tracking-wide"
+                                autocomplete="off"
                             />
-                            <button 
-                                onclick="sendMessage()"
-                                class="bg-gradient-to-r from-purple-600 to-pink-600 px-6 py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition">
-                                Send
-                            </button>
-                            <button 
-                                onclick="clearHistory()"
-                                class="bg-red-600/50 px-4 py-3 rounded-lg hover:bg-red-600/70 transition"
-                                title="Clear History">
-                                🗑️
-                            </button>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right Sidebar - Project Knowledge Map -->
-            <div class="col-span-3">
-                <div class="glass rounded-xl p-6 h-[calc(100vh-200px)] overflow-y-auto">
-                    <h2 class="text-xl font-bold mb-4 text-purple-300">🗺️ Knowledge Map</h2>
-                    <div class="space-y-2 text-sm">
-                        <div class="flex items-center gap-2 p-2 hover:bg-purple-900/30 rounded cursor-pointer">
-                            <span>📁</span>
-                            <span>src/</span>
-                        </div>
-                        <div class="flex items-center gap-2 p-2 hover:bg-purple-900/30 rounded cursor-pointer ml-4">
-                            <span>📄</span>
-                            <span>main.py</span>
-                        </div>
-                        <div class="flex items-center gap-2 p-2 hover:bg-purple-900/30 rounded cursor-pointer ml-4">
-                            <span>📄</span>
-                            <span>utils.py</span>
-                        </div>
-                        <div class="flex items-center gap-2 p-2 hover:bg-purple-900/30 rounded cursor-pointer">
-                            <span>📁</span>
-                            <span>docs/</span>
-                        </div>
-                    </div>
-                    
-                    <!-- Upload Files Section -->
-                    <div class="mt-6 pt-6 border-t border-purple-500/30">
-                        <h3 class="text-sm font-semibold text-purple-300 mb-3">📤 Upload Files</h3>
-                        <input 
-                            type="file" 
-                            id="fileUpload" 
-                            multiple 
-                            class="text-xs w-full"
-                            accept=".txt,.md,.pdf,.docx,.py,.js,.java,.cpp"
-                        />
                         <button 
-                            id="uploadBtn"
-                            onclick="uploadFiles()"
-                            class="w-full mt-2 bg-purple-600/50 px-3 py-2 rounded text-sm hover:bg-purple-600/70 transition">
-                            Upload to RAG
+                            onclick="sendMessage()"
+                            class="bg-white hover:bg-zinc-200 text-black w-16 h-[60px] rounded-[18px] transition shadow-[0_0_20px_-5px_rgba(255,255,255,0.3)] flex items-center justify-center group relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-tr from-zinc-200 to-transparent opacity-0 group-hover:opacity-100 transition"></div>
+                            <i class="ph ph-arrow-right text-xl relative z-10 group-hover:translate-x-1 transition-transform"></i>
                         </button>
-                        <div id="uploadStatus" class="mt-2 text-xs"></div>
                     </div>
                 </div>
             </div>
+            
+            <!-- Overlay -->
+            <div id="overlay" onclick="closeAllSidebars()" class="absolute inset-0 bg-black/80 backdrop-blur-sm z-30 hidden transition-opacity opacity-0"></div>
+        </main>
 
-        </div>
+        <!-- Right Sidebar (Context) -->
+        <aside id="rightSidebar" class="sidebar flex flex-col">
+            <div class="p-8 border-b border-white/5 flex justify-between items-center">
+                <h3 class="text-[10px] font-bold text-zinc-600 uppercase tracking-[0.2em] font-mono">Context</h3>
+                <button onclick="toggleSidebar('rightSidebar')" class="text-zinc-600 hover:text-white transition"><i class="ph ph-x text-lg"></i></button>
+            </div>
+
+            <div class="flex-1 p-6 overflow-y-auto">
+                <!-- Upload Widget -->
+                <div class="mb-10">
+                    <label class="block w-full h-40 border border-dashed border-zinc-800 rounded-[24px] hover:border-white/20 hover:bg-white/5 transition cursor-pointer flex flex-col items-center justify-center group relative overflow-hidden">
+                        <div class="w-14 h-14 bg-black rounded-full flex items-center justify-center mb-4 border border-zinc-800 group-hover:border-white/20 group-hover:scale-110 transition duration-300 shadow-2xl">
+                            <i class="ph ph-upload-simple text-xl text-zinc-600 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <span class="text-[10px] text-zinc-600 group-hover:text-zinc-400 transition-colors font-mono uppercase tracking-widest">Drop Files</span>
+                        <input type="file" id="fileUpload" multiple class="hidden" onchange="handleFileSelect(this)">
+                    </label>
+                    
+                    <!-- Upload Action -->
+                    <div id="uploadArea" class="hidden mt-4 animate-fade-in">
+                        <div class="flex justify-between items-center text-xs text-zinc-300 bg-black p-4 rounded-2xl border border-white/10 shadow-2xl">
+                            <span id="fileCount" class="truncate max-w-[100px] ml-1 font-mono text-[10px] tracking-wide">0 FILES</span>
+                            <button onclick="uploadFiles()" class="bg-white text-black hover:bg-zinc-200 px-4 py-2 rounded-xl font-bold text-[10px] uppercase tracking-widest transition">Upload</button>
+                        </div>
+                    </div>
+                    <div id="uploadStatus" class="mt-4 text-[10px] text-center text-zinc-600 h-4 font-mono tracking-widest uppercase"></div>
+                </div>
+
+                <!-- Active Context List -->
+                <div>
+                    <div class="flex items-center justify-between mb-4 px-2">
+                        <h4 class="text-[10px] font-bold text-zinc-700 uppercase tracking-[0.2em] font-mono">Active</h4>
+                        <span class="text-[10px] text-zinc-600 bg-white/5 px-2 py-1 rounded border border-white/5 font-mono">0</span>
+                    </div>
+                    <div class="space-y-3" id="contextList">
+                        <!-- Empty State -->
+                        <div class="text-[10px] text-zinc-800 text-center py-12 border border-white/5 rounded-3xl border-dashed font-mono uppercase tracking-widest">
+                            Empty
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
     </div>
 
-    <!-- Replace everything between <script> and </script> with this: -->
     <script>
         const BACKEND_URL = 'http://localhost:8000';
         let sessionId = localStorage.getItem('sessionId');
         
-        // Generate or retrieve session ID
         if (!sessionId) {
-            sessionId = generateUUID();
+            sessionId = crypto.randomUUID();
             localStorage.setItem('sessionId', sessionId);
         }
         
-        console.log('Session ID:', sessionId);
-        
-        function generateUUID() {
-            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-                const r = Math.random() * 16 | 0;
-                const v = c === 'x' ? r : (r & 0x3 | 0x8);
-                return v.toString(16);
-            });
-        }
-        
-        // Load conversation history on page load
-        async function loadConversationHistory() {
-            try {
-                const response = await fetch(`${BACKEND_URL}/api/sessions/${sessionId}/messages`);
-                const data = await response.json();
-                
-                if (data.messages && data.messages.length > 0) {
-                    // Clear welcome message
-                    document.getElementById('chatBox').innerHTML = '';
-                    
-                    data.messages.forEach(msg => {
-                        displayMessage(msg.content, msg.role);
-                    });
-                }
-            } catch (error) {
-                console.error('Failed to load conversation history:', error);
-            }
-        }
-        
-        // Send message and sync to backend
-        async function sendMessage() {
-            const input = document.getElementById('commandInput');
-            const message = input.value.trim();
+        document.getElementById('sessionIdInput').value = sessionId;
+
+        // --- Sidebar Logic ---
+        function toggleSidebar(id) {
+            const sidebar = document.getElementById(id);
+            const overlay = document.getElementById('overlay');
+            const isOpen = sidebar.classList.contains('open');
             
-            if (!message) return;
+            closeAllSidebars();
             
-            displayMessage(message, 'user');
-            input.value = '';
-            
-            // Sync user message to backend
-            await syncMessageToBackend(message, 'user');
-            
-            try {
-                // Call AI service (using debugger endpoint as default)
-                const response = await fetch(`${BACKEND_URL}/api/debugger/chat`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        session_id: sessionId,
-                        query: message,
-                        mode: document.getElementById('modeSelector').value
-                    })
-                });
-                
-                const data = await response.json();
-                const aiResponse = data.response || JSON.stringify(data);
-                
-                displayMessage(aiResponse, 'assistant');
-                
-                // Sync AI response to backend
-                await syncMessageToBackend(aiResponse, 'assistant');
-                showTyping(false);
-                
-            } catch (error) {
-                console.error('Error:', error);
-                displayMessage('Error: Failed to get AI response', 'error');
-                showTyping(false);
-            }
-        }
-        
-        async function syncMessageToBackend(content, role) {
-            try {
-                await fetch(`${BACKEND_URL}/api/sessions/${sessionId}/messages`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        role: role,
-                        content: content,
-                        timestamp: new Date().toISOString()
-                    })
-                });
-            } catch (error) {
-                console.error('Failed to sync message:', error);
-            }
-        }
-        
-        function displayMessage(content, role) {
-            const chatBox = document.getElementById('chatBox');
-            
-            // Remove welcome message if it exists
-            const welcomeMsg = chatBox.querySelector('.text-center.text-gray-400');
-            if (welcomeMsg) {
-                welcomeMsg.remove();
-            }
-            
-            const messageDiv = document.createElement('div');
-            messageDiv.className = `mb-4 ${role === 'user' ? 'text-right' : 'text-left'}`;
-            
-            const bubble = document.createElement('div');
-            bubble.className = `inline-block max-w-3/4 p-3 rounded-lg ${
-                role === 'user' 
-                    ? 'bg-purple-600 text-white' 
-                    : role === 'error'
-                    ? 'bg-red-600 text-white'
-                    : 'bg-gray-800 text-gray-100'
-            }`;
-            const ts = new Date().toLocaleTimeString();
-            bubble.innerHTML = `<div>${content}</div><div class="text-xs opacity-70 mt-1">${ts}</div>`;
-            
-            messageDiv.appendChild(bubble);
-            chatBox.appendChild(messageDiv);
-            chatBox.scrollTop = chatBox.scrollHeight;
-        }
-        
-        // Clear conversation history
-        async function clearHistory() {
-            if (!confirm('Clear all conversation history?')) return;
-            
-            try {
-                await fetch(`${BACKEND_URL}/api/sessions/${sessionId}/clear`, { method: 'POST' });
-                
-                document.getElementById('chatBox').innerHTML = `
-                    <div class="text-center text-gray-400 mt-10">
-                        <p class="text-lg">👋 Welcome to AI Dev Companion</p>
-                        <p class="text-sm mt-2">Start chatting or select code in VS Code</p>
-                    </div>
-                `;
-                alert('Conversation history cleared');
-            } catch (error) {
-                console.error('Failed to clear history:', error);
-                alert('Failed to clear conversation history');
+            if (!isOpen) {
+                sidebar.classList.add('open');
+                overlay.classList.remove('hidden');
+                setTimeout(() => overlay.classList.remove('opacity-0'), 10);
             }
         }
 
-        function showTyping(show) {
-            const el = document.getElementById('typingIndicator');
-            if (show) {
-                el.classList.remove('hidden');
+        function closeAllSidebars() {
+            document.querySelectorAll('.sidebar').forEach(el => el.classList.remove('open'));
+            const overlay = document.getElementById('overlay');
+            overlay.classList.add('opacity-0');
+            setTimeout(() => overlay.classList.add('hidden'), 300);
+        }
+
+        // --- Session ---
+        function updateSessionId() {
+            const newId = document.getElementById('sessionIdInput').value.trim();
+            if (newId && newId !== sessionId) {
+                sessionId = newId;
+                localStorage.setItem('sessionId', sessionId);
+                loadConversationHistory();
+                const input = document.getElementById('sessionIdInput');
+                input.style.borderColor = '#ffffff';
+                setTimeout(() => input.style.borderColor = '', 1000);
+            }
+        }
+
+        // --- Upload ---
+        function handleFileSelect(input) {
+            const area = document.getElementById('uploadArea');
+            const count = document.getElementById('fileCount');
+            if (input.files.length > 0) {
+                area.classList.remove('hidden');
+                count.textContent = `${input.files.length} FILES`;
             } else {
-                el.classList.add('hidden');
+                area.classList.add('hidden');
             }
         }
 
-        document.getElementById('clearSessionBtn').addEventListener('click', clearHistory);
-        
-        // Upload files to RAG
         async function uploadFiles() {
-            const fileInput = document.getElementById('fileUpload');
-            const uploadBtn = document.getElementById('uploadBtn');
-            const uploadStatus = document.getElementById('uploadStatus');
-            const files = fileInput.files;
+            const input = document.getElementById('fileUpload');
+            const status = document.getElementById('uploadStatus');
+            const files = input.files;
+            
+            if (files.length === 0) return;
 
-            if (files.length === 0) {
-                alert('Please select files to upload.');
-                return;
-            }
+            status.textContent = 'UPLOADING...';
+            status.className = 'mt-4 text-[10px] text-center text-white font-mono tracking-widest uppercase';
 
-            uploadBtn.disabled = true;
-            uploadBtn.textContent = 'Uploading...';
-            let successCount = 0;
-            let errorCount = 0;
-
+            let success = 0;
             for (let i = 0; i < files.length; i++) {
-                const file = files[i];
                 const formData = new FormData();
-                formData.append('file', file);
+                formData.append('file', files[i]);
                 formData.append('session_id', sessionId);
-                formData.append('is_shared', false); // Example value
 
                 try {
-                    uploadStatus.innerHTML = `Uploading ${i + 1}/${files.length}: ${file.name}`;
-                    const response = await fetch(`${BACKEND_URL}/api/rag/upload`, {
-                        method: 'POST',
-                        body: formData,
-                    });
-
-                    if (response.ok) {
-                        successCount++;
-                    } else {
-                        errorCount++;
-                        console.error(`Error uploading ${file.name}:`, await response.text());
-                    }
-                } catch (error) {
-                    errorCount++;
-                    console.error(`Network error uploading ${file.name}:`, error);
-                }
+                    const res = await fetch(`${BACKEND_URL}/api/rag/upload`, { method: 'POST', body: formData });
+                    if (res.ok) success++;
+                } catch (e) { console.error(e); }
             }
 
-            uploadBtn.disabled = false;
-            uploadBtn.textContent = 'Upload to RAG';
-            uploadStatus.innerHTML = `Finished: ${successCount} succeeded, ${errorCount} failed.`;
-            fileInput.value = ''; // Clear the file input
+            status.textContent = `COMPLETE`;
+            status.className = 'mt-4 text-[10px] text-center text-emerald-500 font-mono tracking-widest uppercase';
+            
+            const list = document.getElementById('contextList');
+            if(list.querySelector('.text-center')) list.innerHTML = '';
+            
+            Array.from(files).forEach(f => {
+                const item = document.createElement('div');
+                item.className = 'flex items-center gap-4 p-4 bg-black rounded-2xl border border-white/5 text-xs text-zinc-400 animate-fade-in group hover:border-white/10 transition cursor-default';
+                item.innerHTML = `
+                    <div class="w-8 h-8 rounded-xl bg-white/5 flex items-center justify-center text-zinc-600 group-hover:text-white transition">
+                        <i class="ph ph-file-code"></i>
+                    </div>
+                    <span class="truncate font-mono text-[10px] tracking-wide">${f.name}</span>
+                `;
+                list.appendChild(item);
+            });
+
+            setTimeout(() => {
+                status.textContent = '';
+                document.getElementById('uploadArea').classList.add('hidden');
+                input.value = '';
+            }, 3000);
         }
-        
-        // Event listeners
+
+        // --- Chat ---
+        async function loadConversationHistory() {
+            const chatBox = document.getElementById('chatBox');
+            chatBox.innerHTML = ''; 
+            
+            try {
+                const response = await fetch(`${BACKEND_URL}/api/sessions/${sessionId}/messages`);
+                if (response.ok) {
+                    const data = await response.json();
+                    if (Array.isArray(data) && data.length > 0) {
+                        data.forEach(msg => displayMessage(msg.content, msg.role));
+                    } else {
+                        chatBox.innerHTML = `
+                            <div id="welcomeState" class="h-full flex flex-col items-center justify-center text-center opacity-100 select-none">
+                                <div class="relative mb-10 group">
+                                    <div class="absolute -inset-10 bg-gradient-to-r from-violet-500/10 to-blue-500/10 rounded-full blur-3xl opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+                                    <div class="w-32 h-32 bg-black rounded-[2.5rem] flex items-center justify-center border border-white/5 shadow-[0_0_50px_-10px_rgba(0,0,0,1)] relative z-10">
+                                        <i class="ph ph-terminal-window text-5xl text-zinc-700 group-hover:text-zinc-200 transition duration-500"></i>
+                                    </div>
+                                </div>
+                                <h2 class="text-3xl font-bold text-white mb-3 tracking-tight">DevHub <span class="text-zinc-600">OS</span></h2>
+                                <p class="text-xs text-zinc-600 font-mono tracking-[0.2em] uppercase">System Ready</p>
+                            </div>`;
+                    }
+                }
+            } catch (e) { console.error(e); }
+        }
+
+        function displayMessage(content, role) {
+            const chatBox = document.getElementById('chatBox');
+            const welcome = document.getElementById('welcomeState');
+            if (welcome) welcome.remove();
+
+            const wrapper = document.createElement('div');
+            wrapper.className = `flex w-full ${role === 'user' ? 'justify-end' : 'justify-start'} animate-fade-in`;
+            
+            const bubble = document.createElement('div');
+            bubble.className = `max-w-[85%] p-5 text-sm shadow-2xl ${
+                role === 'user' 
+                ? 'chat-bubble-user' 
+                : 'chat-bubble-ai'
+            }`;
+            
+            if (role === 'assistant') {
+                let formatted = content
+                    .replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>')
+                    .replace(/\n/g, '<br>');
+                bubble.innerHTML = formatted;
+            } else {
+                bubble.textContent = content;
+            }
+
+            wrapper.appendChild(bubble);
+            chatBox.appendChild(wrapper);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        async function sendMessage() {
+            const input = document.getElementById('commandInput');
+            const msg = input.value.trim();
+            if (!msg) return;
+
+            displayMessage(msg, 'user');
+            input.value = '';
+            document.getElementById('typingIndicator').classList.remove('hidden');
+
+            try {
+                const res = await fetch(`${BACKEND_URL}/api/debugger/chat`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ session_id: sessionId, query: msg })
+                });
+                const data = await res.json();
+                displayMessage(data.response || "No response", 'assistant');
+            } catch (e) {
+                displayMessage("Error connecting to AI.", 'assistant');
+            }
+            document.getElementById('typingIndicator').classList.add('hidden');
+        }
+
+        async function clearHistory() {
+            if(!confirm("Clear this session?")) return;
+            await fetch(`${BACKEND_URL}/api/sessions/${sessionId}`, { method: 'DELETE' });
+            loadConversationHistory();
+            closeAllSidebars();
+        }
+
         document.getElementById('commandInput').addEventListener('keypress', (e) => {
             if (e.key === 'Enter') sendMessage();
         });
-        
-        // Load history on page load
         loadConversationHistory();
-    </script>
 
+    </script>
+    <style>
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(20px); scale: 0.98; }
+            to { opacity: 1; transform: translateY(0); scale: 1; }
+        }
+        .animate-fade-in {
+            animation: fade-in 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+        }
+    </style>
 </body>
 </html>
